@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,500&display=swap);
 
-500&display=swap);
 @charset "UTF-8";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -1520,7 +1520,15 @@ a:hover {
   padding: 34px 10px;
 }
 
-.footer-wrapper {
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1529,7 +1537,7 @@ a:hover {
           justify-content: space-between;
 }
 
-.footer-wrapper__left-call {
+.footer-content__left-call {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1538,7 +1546,7 @@ a:hover {
           justify-content: space-between;
 }
 
-.footer-wrapper__left-call-item {
+.footer-content__left-call-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1549,29 +1557,29 @@ a:hover {
   margin-right: 60px;
 }
 
-.footer-wrapper__left-call-item:last-child {
+.footer-content__left-call-item:last-child {
   margin-right: 0;
 }
 
-.footer-wrapper__left-call-item span {
+.footer-content__left-call-item span {
   font-size: 12px;
   line-height: 32px;
 }
 
-.footer-wrapper__left-call-item a {
+.footer-content__left-call-item a {
   font-weight: 500;
   font-size: 18px;
   line-height: 39px;
 }
 
-.footer-wrapper__left-workTime {
+.footer-content__left-workTime {
   margin-top: 15px;
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 20px;
 }
 
-.footer-wrapper__left-workEmail {
+.footer-content__left-workEmail {
   font-size: 18px;
   line-height: 22px;
   display: -webkit-box;
@@ -1583,7 +1591,7 @@ a:hover {
           flex-direction: column;
 }
 
-.footer-wrapper__left-workEmail a.website-help {
+.footer-content__left-workEmail a.website-help {
   margin-top: 20px;
   font-weight: 500;
   font-size: 18px;
@@ -1611,7 +1619,7 @@ a:hover {
   font-variant: small-caps;
 }
 
-.footer-wrapper__right-person a {
+.footer-content__right-person a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1959,7 +1967,7 @@ a:hover {
   bottom: 0;
   left: 0;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.65) url(../../img/secondary-icons//pause-video.svg) 50% 50%/100px 100px no-repeat;
+  background: rgba(0, 0, 0, 0.65) url(../img/secondary-icons/pause-video.svg) 50% 50%/100px 100px no-repeat;
 }
 
 .page-video .video1440:hover .pause-overlay {
@@ -3525,7 +3533,7 @@ a:hover {
   }
 
   header nav.navbar .navbar-toggler span {
-    background-image: url(../img//adaptiv//menu-burger.svg);
+    background-image: url(../img/adaptiv/menu-burger.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -4607,7 +4615,7 @@ a:hover {
     margin-left: 11px;
   }
 
-  .footer-wrapper {
+  .footer-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4617,7 +4625,7 @@ a:hover {
             justify-content: flex-start;
   }
 
-  .footer-wrapper__left {
+  .footer-content__left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4626,11 +4634,11 @@ a:hover {
             justify-content: space-between;
   }
 
-  .footer-wrapper__left > div {
+  .footer-content__left > div {
     width: 48%;
   }
 
-  .footer-wrapper__left-call {
+  .footer-content__left-call {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4643,22 +4651,22 @@ a:hover {
             justify-content: flex-start;
   }
 
-  .footer-wrapper__left-call-item {
+  .footer-content__left-call-item {
     margin-right: 0;
     margin-bottom: 10px;
   }
 
-  .footer-wrapper__left-call-item span {
+  .footer-content__left-call-item span {
     font-size: 14px;
     line-height: 18px;
   }
 
-  .footer-wrapper__left-call-item a {
+  .footer-content__left-call-item a {
     font-size: 16px;
     line-height: 18px;
   }
 
-  .footer-wrapper__left .time-email {
+  .footer-content__left .time-email {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4671,23 +4679,23 @@ a:hover {
             justify-content: flex-end;
   }
 
-  .footer-wrapper__left-workTime {
+  .footer-content__left-workTime {
     font-size: 14px;
     line-height: 18px;
     margin: 0;
   }
 
-  .footer-wrapper__left-workEmail a {
+  .footer-content__left-workEmail a {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 12px;
   }
 
-  .footer-wrapper__left-workEmail .website-help {
+  .footer-content__left-workEmail .website-help {
     display: none;
   }
 
-  .footer-wrapper__center .social {
+  .footer-content__center .social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4699,19 +4707,19 @@ a:hover {
         justify-content: space-around;
   }
 
-  .footer-wrapper__center .social a {
+  .footer-content__center .social a {
     font-size: 16px;
     line-height: 15px;
     margin-bottom: 0;
   }
 
-  .footer-wrapper__right-person a {
+  .footer-content__right-person a {
     font-size: 14px;
     line-height: 17px;
     margin-top: 4px;
   }
 
-  .footer-wrapper__right-person a img {
+  .footer-content__right-person a img {
     margin-right: 2px;
     width: 15px;
   }
@@ -6062,7 +6070,7 @@ a:hover {
   }
 
   .page-video .video1440 .pause-overlay {
-    background: rgba(0, 0, 0, 0.65) url(../../img/secondary-icons//pause-video.svg) 50% 50%/70px 70px no-repeat;
+    background: rgba(0, 0, 0, 0.65) url(../img/secondary-icons/pause-video.svg) 50% 50%/70px 70px no-repeat;
   }
 
   .page__container-content-story .story-slider .story-block-sidebar .product-slider-block .photo-product {
@@ -6083,7 +6091,7 @@ a:hover {
     margin-left: 11px;
   }
 
-  .footer-wrapper {
+  .footer-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -6093,7 +6101,7 @@ a:hover {
             justify-content: flex-start;
   }
 
-  .footer-wrapper__left {
+  .footer-content__left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6102,11 +6110,11 @@ a:hover {
             justify-content: space-between;
   }
 
-  .footer-wrapper__left > div {
+  .footer-content__left > div {
     width: 48%;
   }
 
-  .footer-wrapper__left-call {
+  .footer-content__left-call {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6119,22 +6127,22 @@ a:hover {
             justify-content: flex-start;
   }
 
-  .footer-wrapper__left-call-item {
+  .footer-content__left-call-item {
     margin-right: 0;
     margin-bottom: 10px;
   }
 
-  .footer-wrapper__left-call-item span {
+  .footer-content__left-call-item span {
     font-size: 8px;
     line-height: 11px;
   }
 
-  .footer-wrapper__left-call-item a {
+  .footer-content__left-call-item a {
     font-size: 12px;
     line-height: 18px;
   }
 
-  .footer-wrapper__left .time-email {
+  .footer-content__left .time-email {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6147,23 +6155,23 @@ a:hover {
             justify-content: flex-end;
   }
 
-  .footer-wrapper__left-workTime {
+  .footer-content__left-workTime {
     font-size: 10px;
     line-height: 13px;
     margin: 0;
   }
 
-  .footer-wrapper__left-workEmail a {
+  .footer-content__left-workEmail a {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 12px;
   }
 
-  .footer-wrapper__left-workEmail .website-help {
+  .footer-content__left-workEmail .website-help {
     display: none;
   }
 
-  .footer-wrapper__center .social {
+  .footer-content__center .social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6175,19 +6183,19 @@ a:hover {
         justify-content: space-around;
   }
 
-  .footer-wrapper__center .social a {
+  .footer-content__center .social a {
     font-size: 10px;
     line-height: 15px;
     margin-bottom: 0;
   }
 
-  .footer-wrapper__right-person a {
+  .footer-content__right-person a {
     font-size: 10px;
     line-height: 17px;
     margin-top: 4px;
   }
 
-  .footer-wrapper__right-person a img {
+  .footer-content__right-person a img {
     margin-right: 2px;
     width: 15px;
   }

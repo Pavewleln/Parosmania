@@ -1,15 +1,20 @@
 .footer {
-
     background: #00AC4E;
     color: white;
     padding: 34px 10px;
+    a{
+        color: white;
+        &:hover{
+            color: white;
+        }
+    }
     &__container {
     }
-    &-wrapper {
+    &-content {
         display: flex;
         justify-content: space-between;
     }
-    &-wrapper__left {
+    &-content__left {
         
         &-call {
             display: flex;
@@ -57,7 +62,7 @@
     }
     .website-help {
     }
-    &-wrapper__center {
+    &-content__center {
     }
     .social {
         display: flex;
@@ -71,9 +76,9 @@
             font-variant: small-caps;
         }
     }
-    &-wrapper__right {
+    &-content__right {
     }
-    &-wrapper__right-person {
+    &-content__right-person {
         a{
             display: flex;
             align-items: center;
@@ -105,7 +110,7 @@
                 margin-left: 11px;
             }
         }
-        &-wrapper{
+        &-content{
             flex-direction: column;
             justify-content: flex-start;
             &__left{
@@ -194,7 +199,7 @@
                 margin-left: 11px;
             }
         }
-        &-wrapper{
+        &-content{
             flex-direction: column;
             justify-content: flex-start;
             &__left{

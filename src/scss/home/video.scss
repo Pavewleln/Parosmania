@@ -16,7 +16,7 @@
             bottom: 0;
             left: 0;
             cursor: pointer;
-            background: rgba(0, 0, 0, 0.65) url(../../img/secondary-icons//pause-video.svg) 50% 50%/ 100px 100px no-repeat;
+            background: rgba(0, 0, 0, 0.65) url(../img/secondary-icons/pause-video.svg) 50% 50%/ 100px 100px no-repeat;
         }
         &:hover .pause-overlay{
             opacity: 1;
@@ -29,7 +29,7 @@
         margin-bottom: 20px;
         .video1440{
             .pause-overlay{
-                background: rgba(0, 0, 0, 0.65) url(../../img/secondary-icons//pause-video.svg) 50% 50%/ 70px 70px no-repeat;
+                background: rgba(0, 0, 0, 0.65) url(../img/secondary-icons/pause-video.svg) 50% 50%/ 70px 70px no-repeat;
             }
         }
     }
