@@ -33,7 +33,7 @@
             right: 15px;
         }
         .popup__text{
-            padding: 45px;
+            padding: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -48,9 +48,9 @@
                 flex-direction: column;
                 align-items: center;
                 input{
-                    padding: 15px 0 15px 50px;
+                    padding: 15px 15px 15px 50px;
                     background-color: #FCFCFC;
-                    width: 140%;
+                    width: 130%;
                     border: 0.873181px solid #EBEBEB;
                     border-radius: 5.91549px;
                     font-weight: 400;
@@ -128,7 +128,7 @@
             right: 15px;
         }
         .popup__text{
-            padding: 45px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -599,10 +599,13 @@
             right: 15px;
         }
         .popup__text{
-            padding: 45px;
+            padding: 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media(max-width:600px){
+                padding: 10px;
+            }
             >img{
                 width: 34px;
                 height: 34px;

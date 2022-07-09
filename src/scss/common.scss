@@ -64,6 +64,9 @@ a{
         font-size: 12.6509px;
         line-height: 19px;
         color: #000000;
+        @media(max-width:520px){
+            padding: 0 5px;
+        }
     }
     .btn-kol{
         cursor: pointer;
@@ -74,9 +77,23 @@ a{
     }
     &__prev{
         padding: 13px 15px 13px 25px;
+        @media(max-width:520px){
+            padding: 6px 6px 6px 8px;
+        }
     }
     &__next{
         padding: 13px 25px 13px 15px;
+        @media(max-width:520px){
+            padding: 6px 8px 6px 6px;
+        }
+    }
+    @media(max-width:520px){
+        width: 100px;
+        height: auto;
+    }
+    @media(max-width:420px){
+        width: 80px;
+        height: auto;
     }
 }
 

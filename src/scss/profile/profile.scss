@@ -17,13 +17,15 @@
         margin-bottom: 30px;
     }
     &-tabs-content{
+        margin-left: 10px;
+        margin-right: 10px;
         margin-bottom: 45px;
         padding-top: 60px;
         display: flex;
         align-items: center;
         .personal-data, .story{
             cursor: pointer;
-            width: 139px;
+            width: 130px;
             height: 109px;
             background-color: white;
             border: none;
@@ -58,8 +60,15 @@
         padding-bottom: 40px;
         display: flex;
         justify-content: space-between;
+        @media(max-width:999px){
+            flex-direction: column;
+        }
         &-info{
             width: 45%;
+            @media(max-width:999px){
+                width: 90%;
+                margin-bottom: 30px;
+            }
             h3{
                 font-weight: 500;
                 font-size: 28px;
@@ -100,8 +109,22 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    input{
-                        width: 100%;
+                    @media(max-width:999px){
+                        justify-content: flex-start;
+                    }
+                    @media(max-width:510px){
+                        flex-direction: column;
+                    }
+                    .name{
+                        margin-right: 5px;
+                        @media(max-width:510px){
+                            width: 100%;
+                        }
+                    }
+                    .second-name{
+                        @media(max-width:510px){
+                            width: 100%;
+                        }
                     }
                 }
                 .email{
@@ -116,12 +139,24 @@
         }
         &-sidebar{
             width: 45%;
+            @media(max-width:999px){
+                width: 90%;
+            }
             input{
                 margin-bottom: 20px;
             }
             .phone{
                 display: flex;
                 justify-content: space-between;
+                input{
+                    margin: 0px 5px 10px ;
+                }
+                @media(max-width:999px){
+                    justify-content: flex-start;
+                }
+                @media(max-width:510px){
+                    flex-direction: column;
+                }
             }
             .old-password, .new-password, .confirm-password{
                 input{
@@ -154,8 +189,14 @@
                 padding: 25px;
                 display: flex;
                 justify-content: space-between;
+                @media(max-width:875px){
+                    flex-direction: column;
+                }
                 &-info{
                     width: 40%;
+                    @media(max-width:875px){
+                        width: 100%;
+                    }
                     b{
                         font-weight: 500;
                         font-size: 19.4096px;
@@ -190,6 +231,9 @@
                 }
                 &-sidebar{
                     width: 55%;
+                    @media(max-width:875px){
+                        width: 100%;
+                    }
                     .product-slider{
                         border-bottom: 1px solid #EBEBEB;
                         &-block{
@@ -198,6 +242,17 @@
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+                            @media(max-width:490px){
+                                .name-product{
+                                    font-size: 14px;
+                                }
+                            }
+                            @media(max-width:375px){
+                                .name-product{
+                                    font-size: 10px;
+                                }
+                            }
+                            
                             .photo-product{
                                 width: 111px;
                                 height: 82px;
@@ -209,6 +264,18 @@
                                     height: auto;
                                     width: 100%;
                                 }
+                                @media(max-width:474px){
+                                    width: 100px;
+                                    height: auto;
+                                }
+                                @media(max-width:400px){
+                                    width: 80px;
+                                    height: auto;
+                                }
+                                @media(max-width:375px){
+                                    width: 70px;
+                                    height: auto;
+                                }
                             }
                             >span{
                                 font-size: 18px;
@@ -219,7 +286,15 @@
                                     font-weight: 500;
                                     font-size: 20px;
                                     line-height: 24px;
+                                    @media(max-width:474px){
+                                        font-size: 14px;
+                                    }
+                                    @media(max-width:375px){
+                                        font-size: 10px;
+                                    }
+
                                 }
+                                
                             }
                         }
                     }
@@ -227,6 +302,5 @@
             }
 
         }
-
     }
 }
