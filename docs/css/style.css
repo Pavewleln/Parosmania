@@ -348,15 +348,15 @@ body {
 }
 
 .popup-input__content .popup__text form input.phone {
-  background-image: url(../../img//popups//input-call.svg);
+  background-image: url(../../img/popups/input-call.svg);
 }
 
 .popup-input__content .popup__text form input.password {
-  background-image: url(../../img//popups/input-key.svg);
+  background-image: url(../../img/popups/input-key.svg);
 }
 
 .popup-input__content .popup__text form input.email {
-  background-image: url(../../img//popups/input-email.svg);
+  background-image: url(../../img/popups/input-email.svg);
 }
 
 .popup-input__content .popup__text form .login-fail {
@@ -476,11 +476,11 @@ body {
 }
 
 .popup-registration__content .popup__text form input.phone {
-  background-image: url(../../img//popups/input-call.svg);
+  background-image: url(../../img/popups/input-call.svg);
 }
 
 .popup-registration__content .popup__text form input.password {
-  background-image: url(../../img//popups/input-key.svg);
+  background-image: url(../../img/popups/input-key.svg);
 }
 
 .popup-registration__content .popup__text form .login-fail {
@@ -575,7 +575,7 @@ body {
 }
 
 .popup-subscription__content .popup__text form input.email {
-  background-image: url(../../img//popups/input-email.svg);
+  background-image: url(../../img/popups/input-email.svg);
 }
 
 .popup-subscription__content .popup__text form > button {
@@ -809,15 +809,15 @@ body {
 }
 
 .popup-recovery__content .popup__text form input.phone {
-  background-image: url(../../img//popups//input-call.svg);
+  background-image: url(../../img/popups/input-call.svg);
 }
 
 .popup-recovery__content .popup__text form input.password {
-  background-image: url(../../img//popups/input-key.svg);
+  background-image: url(../../img/popups/input-key.svg);
 }
 
 .popup-recovery__content .popup__text form input.email {
-  background-image: url(../../img//popups/input-email.svg);
+  background-image: url(../../img/popups/input-email.svg);
 }
 
 .popup-recovery__content .popup__text form .reestablish {
@@ -2217,7 +2217,7 @@ a:hover {
 
 .page__container-description-top-sidebar-content .pay-block .cart-add {
   border: none;
-  background-image: url(../../img//description//basket-white.svg);
+  background-image: url(../../img/description/basket-white.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #00AC4E;
@@ -3657,7 +3657,7 @@ a:hover {
   }
 
   header nav.navbar .navbar-collapse .navbar-nav .nav-item .delivery {
-    background-image: url(../img/adaptiv//delivery.svg);
+    background-image: url(../img/adaptiv/delivery.svg);
     background-repeat: no-repeat;
   }
 
