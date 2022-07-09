@@ -1,14 +1,15 @@
 .page__container-wrapper{
     .form-support{
+        padding: 0 10px;
         margin-top: 25px;
-        width: 672px;
+        width: 100%;
         form{
+            padding: 10px;
             textarea{
                 background: #F9F9F9;
                 border-radius: 5px;
                 font-size: 20px;
                 line-height: 21px;
-                color: #BDBDBD;
                 height: 174px;
                 width: 100%;
                 padding: 20px;
@@ -26,5 +27,16 @@
         }
         
     }
-    
+}
+@media(max-width:681px){
+    .page__container-wrapper{
+        .form-support{
+            form{
+                textarea{
+                    height: 134px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
