@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+                <div class="page__container">
+                   <div class="page__container-tabs-content">
+                    <div class="personal-data active-class-tab-profile">
+                        <img src="img/profile//personalData-white.svg" alt="">
+                        <a href="">Личные данные</a>
+                    </div>
+                    <div class="story">
+                        <img src="img/profile/story-white.svg" alt="">
+                        <a href="">История заказов</a>
+                    </div>
+                   </div>
+                   <div class="page__container-content-person">
+                        <div class="page__container-content-person-info">
+                            <h3>Персональная информация</h3>
+                            <form action="">
+                                <div class="download-file">
+                                    <div class="photo"></div>
+                                    <input type="file" name="file" id="inputfile">
+                                    <label for="inputfile">Загрузить фотографию</label>
+                                </div>
+                                <div class="fio">
+                                    <div class="name">
+                                        <p>Ваше имя</p>
+                                        <input type="name" placeholder="Имя">
+                                    </div>
+                                    <div class="second-name">
+                                        <p>Ваша фамилия</p>
+                                        <input type="name" placeholder="Фамилия">
+                                    </div>
+                                </div>
+                                <div class="email">
+                                    <p>Адрес электронной почты</p>
+                                    <input type="email" placeholder="Email">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="page__container-content-person-sidebar">
+                            <h3>Контактная информация</h3>
+                            <div class="phone">
+                                <div class="phone-1">
+                                    <p>Основной телефон</p>
+                                    <input type="phone" placeholder="+380">
+                                </div>
+                                <div class="phone-2">
+                                    <p>Основной телефон</p>
+                                    <input type="phone" placeholder="+380">
+                                </div>
+                            </div>
+                            <h3>Изменение пароля</h3>
+                            <div class="password">
+                                <div class="old-password">
+                                    <p>Изменение пароля</p>
+                                    <input type="password" placeholder="Старый пароль">
+                                </div>
+                                <div class="new-password">
+                                    <p>Ваш новый пароль</p>
+                                    <input type="password" placeholder="Новый пароль">
+                                </div>
+                                <div class="confirm-password">
+                                    <p>Подтверждение</p>
+                                    <input type="password" placeholder="Подтвердите пароль">
+                                </div>
+                            </div>
+                            <button>Сохранить изменения</button>
+                        </div>
+                   </div>
+                   <div class="page__container-content-story">
+                        <div class="story-slider">
+                            <div class="story-block">
+                                <div class="story-block-info">
+                                    <div class="number">
+                                        <b>Номер заказа:</b>
+                                        <span>Заказ №</span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="pay">
+                                        <b>Способ оплаты:</b>
+                                        <span>Банковская карта</span>
+                                    </div>
+                                    <div class="data-order">
+                                        <b>Дата заказа:</b>
+                                        <span>19.05.2020</span>
+                                    </div>
+                                    <div class="data-delivery">
+                                        <b>Дата доставки:</b>
+                                        <span>23.05.2020</span>
+                                    </div>
+                                    <div class="status fail">
+                                        <b>Статус заказа:</b>
+                                        <span class="">Отменен</span>
+                                    </div>
+                                </div>
+                                <div class="story-block-sidebar">
+                                    <div class="product-slider">
+                                        <div class="product-slider-block">
+                                            <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>
+                                            <div class="photo-product">
+                                                <img src="img/katalog/desert/blinchiki-s-clubnikoy.jpg" alt="">
+                                            </div>
+                                            <span class="name-product">Хачапури</span>
+                                            <div class="price-kol">
+                                                <div class="price-kol__prev btn-kol">
+                                                    -
+                                                </div>
+                                                <span>1</span>
+                                                <div class="price-kol__next btn-kol">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span>350 ₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-slider-block">
+                                            <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>
+                                            <div class="photo-product">
+                                                <img src="img/katalog/desert/blinchiki-s-clubnikoy.jpg" alt="">
+                                            </div>
+                                            <span class="name-product">Хачапури</span>
+                                            <div class="price-kol">
+                                                <div class="price-kol__prev btn-kol">
+                                                    -
+                                                </div>
+                                                <span>1</span>
+                                                <div class="price-kol__next btn-kol">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span>350 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="story-block">
+                                <div class="story-block-info">
+                                    <div class="number">
+                                        <b>Номер заказа:</b>
+                                        <span>Заказ №</span>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="pay">
+                                        <b>Способ оплаты:</b>
+                                        <span>Банковская карта</span>
+                                    </div>
+                                    <div class="data-order">
+                                        <b>Дата заказа:</b>
+                                        <span>19.05.2020</span>
+                                    </div>
+                                    <div class="data-delivery">
+                                        <b>Дата доставки:</b>
+                                        <span>23.05.2020</span>
+                                    </div>
+                                    <div class="status completed">
+                                        <b>Статус заказа:</b>
+                                        <span class="">Доставлен</span>
+                                    </div>
+                                </div>
+                                <div class="story-block-sidebar">
+                                    <div class="product-slider">
+                                        <div class="product-slider-block">
+                                            <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>
+                                            <div class="photo-product">
+                                                <img src="img/katalog/desert/blinchiki-s-clubnikoy.jpg" alt="">
+                                            </div>
+                                            <span class="name-product">Хачапури</span>
+                                            <div class="price-kol">
+                                                <div class="price-kol__prev btn-kol">
+                                                    -
+                                                </div>
+                                                <span>1</span>
+                                                <div class="price-kol__next btn-kol">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span>350 ₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-slider-block">
+                                            <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>
+                                            <div class="photo-product">
+                                                <img src="img/katalog/desert/blinchiki-s-clubnikoy.jpg" alt="">
+                                            </div>
+                                            <span class="name-product">Хачапури</span>
+                                            <div class="price-kol">
+                                                <div class="price-kol__prev btn-kol">
+                                                    -
+                                                </div>
+                                                <span>1</span>
+                                                <div class="price-kol__next btn-kol">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span>350 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>       
+                </div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

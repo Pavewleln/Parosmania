@@ -1,0 +1,254 @@
+.header{
+	background-color: white;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+
+	nav{
+		width: 100%;
+		padding: 25px 5px;
+	}
+	.nav-item{
+
+		padding: 0 22px;
+		.nav-link{
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: black;
+		}
+	} 
+	.menu-right{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__contact{
+			width: 185px;
+			>a{
+				display: flex;
+				align-items: center;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 21px;
+				color: #000000;
+				>img{
+					margin-right: 5px;
+				}
+			}
+		}
+		&__user{
+			display: flex;
+			
+			> a, button{
+				margin-left: 30px;
+			}
+			.basket{
+				position: relative;
+				.basket-shop-product{
+					position: absolute;
+					top: 2px;
+					right: -3px;
+					width: 15px;
+					height: 15px;
+					background-color: red;
+					border-radius: 50%;
+					color: #FFFFFF;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 10px;
+					display: none;
+				}
+			}
+			
+		}
+	}
+	.dropdown-menu{
+		background: #FFFFFF;
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+		border-radius: 12px;
+		padding: 56px 20px 10px 15px;
+		position: relative;
+		top: -12px;
+		z-index: 1;
+		.dropdown-item{
+			font-size: 10.6604px;
+			line-height: 13px;
+			color: #333333;
+			margin-bottom: 16px;
+			display: flex;
+			align-items: center;
+			>svg{
+				margin-right: 7px;
+			}
+		}
+	}
+	.dropdown{
+		>a{
+			position: relative;
+			z-index: 2;
+		}
+	}
+	.navbar-brand{
+		>img{
+			margin-right: 38px;
+
+		}
+	}
+	
+}
+
+@media(max-width:991px){
+	header{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		position: fixed;
+		z-index: 10;
+		nav.navbar{
+			height: 50px;
+			padding: 0;
+			position: static;
+			.navbar-toggler{
+				order: 1;
+				padding: 0;
+				border: 0;
+				position: relative;
+				z-index: 10;
+				span{
+					background-image: url(../img//adaptiv//menu-burger.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: contain;
+					width: 23px;
+					height: 13px;
+				}
+			}
+			.navbar-brand{
+				order: 2;
+				margin-right: 0;
+				border: 0;
+				position: relative;
+				z-index: 10;
+				img{
+					height: 24px;
+				}
+			}
+			.menu-right{
+				order: 3;
+				position: relative;
+				z-index: 10;
+				&__user{
+					a, button{
+						margin-left: 0;
+						img{
+							width: 20px;
+						}
+					}
+					.profile{
+						img{
+							width: 20px;
+						}
+						margin: 0 20px;
+					}
+				}
+				&__contact{
+					width: auto;
+					margin-right: 0;
+					a{
+						img{
+							margin: 0;
+							width: 17px;
+						}
+						span{
+							display: none;
+						}
+					}
+				}
+			}
+			.navbar-collapse{
+				z-index: 2;
+				position: fixed;
+				left: 0;
+				top: 0px;
+				padding-top: 50px;
+				background: #343e48;
+				width: 60%;
+				height: 100vh;
+				border-radius: 0 8px 8px 0;
+				overflow: hidden;
+				&:before{
+					content: "";
+					width: 100%;
+					height: 50px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background-color: #fff;
+					border-radius: 0  8px 8px 8px;
+				}
+				.navbar-nav .nav-item{
+					.show{
+						&:before{
+							content: "";
+							transform: rotate(90deg);
+						}
+					}
+					.menu{
+						background-image: url(../img/adaptiv/menu.svg);
+						background-repeat: no-repeat;
+					}
+					.delivery{
+						background-image: url(../img/adaptiv//delivery.svg);
+						background-repeat: no-repeat;
+					}
+					.payment{
+						background-image: url(../img/adaptiv/payment.svg);
+						background-repeat: no-repeat;
+					}
+					.vacansy{
+						background-image: url(../img/adaptiv/vacansy.svg);
+						background-repeat: no-repeat;
+					}
+					.nav-link{
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 16px;
+						color: #FFFFFF;
+						margin-top: 25px;
+						padding: 0 21px 0 32px;
+						position: relative;
+						&::before{
+							content: "";
+							background-image: url(../img/adaptiv/arrow-right-white.svg);
+							width: 6px;
+							height: 10px;
+							top: 0;
+							right: 21px;
+							position: absolute;
+							transition: all 0.5s ease;
+						}
+					}
+					.dropdown-menu{
+						background: #343e48;
+						padding: 15px 0 0px 10px;
+						box-shadow: none;
+						border: none;
+						.dropdown-item{
+							font-style: normal;
+							font-weight: normal;
+							font-size: 10px;
+							line-height: 12px;
+							margin-bottom: 10px;
+							color: #f2f2f2;
+							>svg{
+								path{
+									fill: #fff;
+								}
+							}
+						}
+						
+					}
+				}
+			}
+		}	
+	}
+}

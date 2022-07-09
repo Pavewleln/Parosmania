@@ -1,0 +1,102 @@
+.page__container-menu{
+    position: relative;
+    &-slider{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow-y: auto;
+        width: 95%;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        &-block{
+            
+            margin-right: 95px;
+            padding: 2px 0;
+            >a{
+                font-size: 23.3333px;
+                line-height: 27px;
+                color: #4F4F4F;
+            }
+            
+        }
+        .active-class-checked{
+            color: white;
+            padding: 8px 16px;
+            background: #00AC4E;
+            border-radius: 5px;
+        }
+        
+    }
+    >img{
+        position: absolute;
+        right: 5px;
+        top: 30%;
+        cursor: pointer;
+    }
+}
+@media(max-width:767px){
+    .page__container-menu{
+        position: relative;
+        &-slider{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow-y: auto;
+            width: 90%;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            &-block{
+                
+                margin-right: 60px;
+                padding: 2px 0;
+                >a{
+                    font-size: 15px;
+                    line-height: 27px;
+                    color: #4F4F4F;
+                }
+                
+            }
+            .active-class-checked{
+                color: white;
+                padding: 8px 16px;
+                background: #00AC4E;
+                border-radius: 5px;
+            }
+            
+        }
+        >img{
+            position: absolute;
+            right: 5px;
+            top: 30%;
+            cursor: pointer;
+        }
+    }
+}
+@media(max-width:400px){
+    .page__container-menu{
+        position: relative;
+        &-slider{
+            width: 85%;
+            &-block{
+                
+                margin-right: 40px;
+                padding: 2px 0;
+                >a{
+                    font-size: 15px;
+                    line-height: 15px;
+                    color: #4F4F4F;
+                }
+                
+            }
+        }
+        >img{
+            width: 10px;
+            position: absolute;
+            right: 5px;
+            top: 30%;
+            cursor: pointer;
+        }
+    }
+}

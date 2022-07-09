@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+                <div class="page__container">
+                    <div class="page__container-basket">
+                        <div class="page__container-basket-info">
+                            <div class="page__container-basket-info-top">
+                                <h3>Корзина</h3>
+                                <div class="product-slider">
+                                    <div class="product-slider-block">
+                                        <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>
+                                        <div class="photo-product">
+                                            <img src="img/katalog/desert/blinchiki-s-clubnikoy.jpg" alt="">
+                                        </div>
+                                        <span class="name-product">Хачапури</span>
+                                        <div class="price-kol">
+                                            <div class="price-kol__prev btn-kol">
+                                                -
+                                            </div>
+                                            <span>1</span>
+                                            <div class="price-kol__next btn-kol">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <span>350 ₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-slider-block">
+                                        <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>
+                                        <div class="photo-product">
+                                            <img src="img/katalog/desert/blinchiki-s-clubnikoy.jpg" alt="">
+                                        </div>
+                                        <span class="name-product">Хачапури</span>
+                                        <div class="price-kol">
+                                            <div class="price-kol__prev btn-kol">
+                                                -
+                                            </div>
+                                            <span>1</span>
+                                            <div class="price-kol__next btn-kol">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <span>350 ₽</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="page__container-basket-info-bottom">
+                                <div class="purchase-info">
+                                    <div class="title">
+                                        Закажите на 3000 RUB и получите
+                                    </div>
+                                    <div class="line">
+                                        <img src="img/description//bank.svg" alt=""><span><b>300 RUB</b> на бонусный счет</span>
+                                    </div>
+                                    <div class="line">
+                                        <img src="img/description//delivery.svg" alt=""><b>Бесплатная доставка</b>
+                                    </div>
+                                    <div class="range-slide">
+                                        <div class="range-line" data-mins="0" data-maxs="3000">
+                                            <div class="green-line">
+        
+                                            </div>
+                                            <div class="round" data-min="1000 минимальный заказ">
+        
+                                            </div>
+                                        </div>
+                                        <div class="range-text">
+                                            <span>Осталось <b><span>1988</span> RUB</b> до бесплатной доставки</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__container-basket-sidebar">
+                            <div class="page__container-basket-sidebar-top">
+                                <h3>Заказ №<span>1</span></h3>
+                                <div class="price">
+                                    <span class="price-name">Товаров в корзине</span>
+                                    <div class="price-money">
+                                        <span class="price-rub">700</span>
+                                        <span class="rouble">₽</span>
+                                    </div> 
+                                </div>
+                                <div class="promo">
+                                    <span class="promo-name">Промокод</span>
+                                    <div class="promo-money">
+                                        <span class="promo-rub">-100</span>
+                                        <span class="rouble">₽</span>
+                                    </div>
+                                </div>
+                                <div class="total-price">
+                                    <p>Итого к оплате</p>
+                                    <span class="total-price-rub">-100</span>
+                                    <span class="total-price-rouble">₽</span>
+                                </div>
+                                <a href="./form.html">Оформить заказ</a>
+                            </div>
+                            <div class="page__container-basket-sidebar-bottom">
+                                <h3>Промокод</h3>
+                                <form action="">
+                                    <input type="text" placeholder="Введите промокод">
+                                    <button type="submit">Подтвердить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

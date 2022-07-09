@@ -1,0 +1,173 @@
+.page__container{
+    &-delivery{
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+        &-info{
+            width: 55%;
+            &-top{
+                >h3{
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 50px;
+                    color: #333333;
+                    margin-bottom: 15px;
+                }
+                .product-slider{
+                    border-bottom: 1px solid #EBEBEB;
+                    &-block{
+                        padding: 20px 0;
+                        border-top: 1px solid #EBEBEB;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .photo-product{
+                            width: 111px;
+                            height: 82px;
+                            background: #00AC4E;
+                            border-radius: 5px;
+                            display: flex;
+                            overflow: hidden;
+                            img{
+                                height: auto;
+                                width: 100%;
+                            }
+                        }
+                        >span{
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                        >.price{
+                            span{
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-bottom{
+                margin-top: 40px;
+                background-color: white;
+                box-shadow: none;
+                .tabs-info{
+                    margin-bottom: 20px;
+                    &__delivery{
+                        font-weight: 500;
+                        font-size: 14.6903px;
+                        line-height: 11px;
+                        &:hover{
+                            color:black;
+                        }
+                    }
+                    &__pickup{
+                        margin-left: 20px;
+                        font-weight: 500;
+                        font-size: 14.6903px;
+                        line-height: 11px;
+                        &:hover{
+                            color:black;
+                        }
+                    }
+                }
+                .total-info{
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 28.763px rgba(0, 0, 0, 0.06);
+                    border-radius: 9.58767px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 30px;
+                    &-left{
+                        
+                        width: 60%;
+                        &-money{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            p{
+                                font-weight: 500;
+                                font-size: 13.0516px;
+                                line-height: 20px;
+                            }
+                            .rouble-black{
+                                font-weight: 500;
+                                font-size: 13.0516px;
+                                line-height: 20px;
+                            }
+                        }
+                        &-totals{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            p{
+                                font-weight: 500;
+                                font-size: 13.0516px;
+                                line-height: 20px;
+                            }
+                            .rouble-green{
+                                font-weight: 500;
+                                font-size: 13.0516px;
+                                line-height: 20px;
+                                color: #00AC4E;
+                            }
+                        }
+                    }
+                    &-right{
+                        width: 30%;
+                        >p{
+                            font-weight: 500;
+                            font-size: 15.3403px;
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
+        }
+        &-sidebar{
+            p{
+                font-size: 15.6716px;
+                line-height: 24px;
+                margin-bottom: 0;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+            .form-area, .form-fio, .form-phone, .form-address, .form-pickup{
+                >input{
+                    width: 100%;
+                    height: 65px;
+                    font-size: 15.6716px;
+                    line-height: 24px;
+                    background: #FCFCFC;
+                    border: 1.1194px solid #EBEBEB;
+                    border-radius: 7.11356px;
+                    padding: 10px 20px 10px 30px;
+                }
+            }
+            button{
+                margin-top: 20px;
+                padding: 17px 32px;
+                background: #00AC4E;
+                border-radius: 5.59701px;
+                font-weight: 500;
+                font-size: 15.6716px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+            width: 35%;
+            .delivery-form{
+                .form-comment{
+                    >textarea{
+                        padding: 20px 0px 10px 30px;
+                        width: 100%;
+                        height: 65.44px;
+                        background: #FCFCFC;
+                        border: 1.1194px solid #EBEBEB;
+                        border-radius: 7.11356px;
+                    }
+                }
+            }
+        }
+    }  
+}

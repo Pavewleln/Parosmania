@@ -1,0 +1,30 @@
+.page__container-wrapper{
+    .form-support{
+        margin-top: 25px;
+        width: 672px;
+        form{
+            textarea{
+                background: #F9F9F9;
+                border-radius: 5px;
+                font-size: 20px;
+                line-height: 21px;
+                color: #BDBDBD;
+                height: 174px;
+                width: 100%;
+                padding: 20px;
+            }
+            button{
+                margin-top: 40px;
+                font-weight: 500;
+                font-size: 18.7606px;
+                line-height: 24px;
+                color: #FFFFFF;
+                background: #00AC4E;
+                border-radius: 7.8169px;
+                padding: 18px 45px;
+            }
+        }
+        
+    }
+    
+}

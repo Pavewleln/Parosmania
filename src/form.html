@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+                <div class="page__container">
+                    <div class="page__container-delivery">
+                        <div class="page__container-delivery-info">
+                            <div class="page__container-delivery-info-top">
+                                <h3>Оформление заказа</h3>
+                                <div class="product-slider">
+                                    <div class="product-slider-block">
+                                        <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>
+                                        <div class="photo-product">
+                                            <img src="img/katalog/desert/blinchiki-s-clubnikoy.jpg" alt="">
+                                        </div>
+                                        <span class="name-product">Хачапури</span>
+                                        <div class="price-kol">
+                                            <div class="price-kol__prev btn-kol">
+                                                -
+                                            </div>
+                                            <span>1</span>
+                                            <div class="price-kol__next btn-kol">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <span>350 ₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-slider-block">
+                                        <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>
+                                        <div class="photo-product">
+                                            <img src="img/katalog/desert/blinchiki-s-clubnikoy.jpg" alt="">
+                                        </div>
+                                        <span class="name-product">Хачапури</span>
+                                        <div class="price-kol">
+                                            <div class="price-kol__prev btn-kol">
+                                                -
+                                            </div>
+                                            <span>1</span>
+                                            <div class="price-kol__next btn-kol">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <span>350 ₽</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="page__container-delivery-info-bottom">
+                                <div class="tabs-info">
+                                    <a href="" class="tabs-info__delivery active-class-checked">Доставка</a>
+                                    <a href="" class="tabs-info__pickup">Самовывоз (- 20%)</a>
+                                </div>
+                                <div class="total-info">
+                                    <div class="total-info-left">
+                                        <div class="total-info-left-money">
+                                            <p>Итого</p>
+                                            <div class="rouble-black">
+                                                <span>700</span>
+                                                <span>₽</span>
+                                            </div>
+                                        </div>
+                                        <div class="total-info-left-totals">
+                                            <p>Доставка</p>
+                                            <div class="rouble-green">
+                                                <span>0</span>
+                                                <span>₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="total-info-right">
+                                        <p>Итого к оплате</p>
+                                        <div class="rouble-black">
+                                            <span>700</span>
+                                            <span>₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__container-delivery-sidebar">
+                            <form class="delivery-form" action="">
+                                <div class="form-area">
+                                    <p>Район доставки</p>
+                                    <input type="text" placeholder="Район доставки">
+                                </div>
+                                <div class="form-fio">
+                                    <p>ФИО</p>
+                                    <input type="text" placeholder="Введите Ваше полное имя">
+                                </div>
+                                <div class="form-phone">
+                                    <p>Телефон</p>
+                                    <input type="phone" placeholder="+380">
+                                </div>
+                                <div class="form-address">
+                                    <p>Адрес доставки</p>
+                                    <input type="text" placeholder="Введите адрес доставки">
+                                </div>
+                                <div class="form-pay">
+                                    <p>Способ оплаты</p>
+                                    <div class="options">
+                                        <div class="options__item">
+                                            <input id="formCashMoney" checked type="radio" value="cash" name="money" class="options__input send__input">
+                                            <label for="formCashMoney" class="options__label"><span>Наличными</span></label>
+                                        </div>
+                                        <div class="options__item">
+                                            <input id="formCardMoney" type="radio" value="card" name="money" class="options__input send__input">
+                                            <label for="formCardMoney" class="options__label"><span>Картой</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-comment">
+                                    <p>Комментарий к заказу</p>
+                                    <textarea name="comment" id="" cols="30" rows="10" placeholder="Введите ваш комментарий..."></textarea>
+                                </div>
+                                <button>Оформить заказ</button>
+                            </form>
+                            <!-- <form action="" class="pickup-form">
+                                <div class="form-fio">
+                                    <p>ФИО</p>
+                                    <input type="text" placeholder="Введите Ваше полное имя">
+                                </div>
+                                <div class="form-phone">
+                                    <p>Телефон</p>
+                                    <input type="phone" placeholder="+380">
+                                </div>
+                                <div class="form-pickup">
+                                    <p>Когда заберете?</p>
+                                    <input type="time" placeholder="Укажите время">
+                                </div>
+                                <button>Оформить заказ</button>
+                            </form> -->
+                        </div>
+                    </div>
+                </div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

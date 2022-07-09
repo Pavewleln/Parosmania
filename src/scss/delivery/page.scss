@@ -1,0 +1,43 @@
+.page__container{
+    &-wrapper{
+        padding: 45px 0 60px 0;
+        h1{
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 33px;
+        }
+        p{
+            font-size: 22px;
+            line-height: 26px;
+            color: #828282;
+            margin-top: 25px;
+            margin-bottom: 45px;
+        }
+        &-href-block{
+            display: flex;
+            align-items: center;
+            a.green-btn{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 21px;
+                text-align: center;
+                color: #FFFFFF;
+                background: #00AC4E;
+                border-radius: 6.90493px;
+                padding: 16px 38px;
+                margin-right: 60px;
+            }
+            a.white-btn{
+                font-size: 22.2162px;
+                line-height: 29px;
+                text-align: center;
+                color: #00AC4E;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

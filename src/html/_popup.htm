@@ -1,0 +1,165 @@
+<!-- вход в личный кабинет -->
+<div id="popup-input"  class="popup-input" data-modal>
+	<div class="popup-input__content">
+		<button data-close type="button" class="popup__close"><img src="../img/popups/close-modal.svg" alt=""></button>
+		<div class="popup__text">
+			<img src="../img//popups//person-img.svg" alt="">
+			<h3>Войти в личный кабинет</h3>
+			<form action="">
+				<input type="phone" class="phone" placeholder="Телефон">
+				<input type="password" class="password" placeholder="Пароль">
+				<p class="login-fail">Не правильный логин или пароль</p>
+				<a href="" class="reestablish">Забыли пароль?</a>
+				<button>Войти</button>
+			</form>
+			<p>Впервые у нас? <a href="">Зарегистрироваться</a></p>
+		</div>
+	</div>
+</div>
+
+
+<!-- регистрация -->
+<div id="popup-registration"  class="popup-registration" data-modal>
+	<div class="popup-registration__content">
+		<button data-close type="button" class="popup__close"><img src="../img/popups/close-modal.svg" alt=""></button>
+		<div class="popup__text">
+			<img src="../img//popups//person-img.svg" alt="">
+				<h3>Регистрация</h3>
+			<form action="">
+				<input type="phone" class="phone" placeholder="Телефон">
+				<input type="password" class="password" placeholder="Пароль">
+				<input type="password" class="password" placeholder="Подтвердите пароль">
+				<p class="login-fail">Пользователь с таким номером телефона уже зарегистрирован.</p>
+				<div class="checkbox">
+					<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+					<label for="c_1" class="checkbox__label"><span class="checkbox__text">Хочу получать выгодные предложения от магазина</span></label>
+				</div>
+				<div class="checkbox">
+					<input id="c_2" class="checkbox__input" type="checkbox" value="1" name="form[]">
+					<label for="c_2" class="checkbox__label"><span class="checkbox__text">Принимаю условия <a href="">Пользовательского соглашения, Политики конфиденциальности</a></span></label>
+				</div>
+				<button>Зарегистрироваться</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- подписка на рассылку -->
+<div id="popup-subscription"  class="popup-subscription" data-modal>
+	<div class="popup-subscription__content">
+		<button data-close type="button" class="popup__close"><img src="../img/popups/close-modal.svg" alt=""></button>
+		<div class="popup__text">
+			<img src="../img//popups//email-img.svg" alt="">
+			<h3>Подпишитесь на нашу рассылку и получите промокод на 500 RUB!</h3>
+			<form action="">
+				<input type="email" class="email" placeholder="email">
+				<button>Отправить</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- проверка номера телефона -->
+<div id="popup-cheack-phone"  class="popup-cheack-phone" data-modal>
+	<div class="popup-cheack-phone__content">
+		<button data-close type="button" class="popup__close"><img src="../img/popups/close-modal.svg" alt=""></button>
+		<div class="popup__text">
+			<img src="../img//popups//person-img.svg" alt="">
+			<h3>Подтвердите номер телефона</h3>
+			<form action="">
+				<div class="input-cheackPhone">
+					<input type="text" maxlength="1">
+					<span></span>
+					<input type="text" maxlength="1">
+					<span></span>
+					<input type="text" maxlength="1">
+					<span></span>
+					<input type="text" maxlength="1">
+				</div>
+				<div class="send-checked">
+					<a href="" class="cheackPhonedisabled">Отправить повторно</a><b>1:59</b>
+				</div>
+				<a href="" class="cheackPhoneAbled">Отправить повторно</a>
+				<button class="">Далее</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Восстановление пароля -->
+<div id="popup-recovery"  class="popup-recovery" data-modal>
+	<div class="popup-recovery__content">
+		<button data-close type="button" class="popup__close"><img src="../img/popups/close-modal.svg" alt=""></button>
+		<div class="popup__text">
+			<img src="../img//popups//person-img.svg" alt="">
+			<h3>Восстановление пароля</h3>
+			<form action="">
+				<input type="phone" class="phone" placeholder="Телефон">
+				<input type="password" class="password" placeholder="Пароль">
+				<input type="password" class="password" placeholder="Подтвердите пароль">
+				<div class="send-btn">
+					<button class="cancel">Отменить</button><button class="update">Обновить пароль</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Отзыв -->
+<div id="popup-review"  class="popup-review" data-modal>
+	<div class="popup-review__content">
+		<button data-close type="button" class="popup__close"><img src="../img/popups/close-modal.svg" alt=""></button>
+		<div class="popup__text">
+			<h3>Добавить отзыв</h3>
+			<form action="">
+				<div class="rating">
+					<p>Ваша оценка:</p>
+					<div class="rating-area">
+						<input type="radio" id="star-5" name="rating" value="5">
+						<label for="star-5" title="Оценка «5»"></label>	
+						<input type="radio" id="star-4" name="rating" value="4">
+						<label for="star-4" title="Оценка «4»"></label>    
+						<input type="radio" id="star-3" name="rating" value="3">
+						<label for="star-3" title="Оценка «3»"></label>  
+						<input type="radio" id="star-2" name="rating" value="2">
+						<label for="star-2" title="Оценка «2»"></label>    
+						<input type="radio" id="star-1" name="rating" value="1">
+						<label for="star-1" title="Оценка «1»"></label>
+					</div>
+				</div>
+				<div class="name">
+					<p>Ваше имя:</p>
+					<input type="name" placeholder="Введите Ваше имя">
+				</div>
+				<div class="reviews">
+					<p>Ваш отзыв:</p>
+					<textarea name="reviews" id="" cols="30" rows="10"></textarea>
+				</div>
+				
+				<button class="">Добавить отзыв</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Бронирование стола -->
+<div id="popup-booking"  class="popup-booking" data-modal>
+	<div class="popup-booking__content">
+		<button data-close type="button" class="popup__close"><img src="../img/popups/close-modal.svg" alt=""></button>
+		<div class="popup__text">
+			<h3>Бронирование стола</h3>
+			<form action="">
+				<input type="name" placeholder="Имя">
+				<div class="amount">
+					<input type="phone" placeholder="+380">
+					<input type="number" placeholder="Количество человек" min="1">
+				</div>
+				<div class="data">
+					<input type="text" placeholder="Время: _ _ : _ _">
+					<input type="data" placeholder="Дата:  дд.мм.гг">
+				</div>
+				<button>Войти</button>
+			</form>
+		</div>
+	</div>
+</div>

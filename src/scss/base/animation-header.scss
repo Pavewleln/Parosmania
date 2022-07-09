@@ -1,0 +1,22 @@
+// position: relative;
+//         	transition: all 1s ease 0.5s;
+
+//         	&:hover{
+                
+//             	&::before{
+//                 	transform: scalex(1);
+//             	}
+//         	}
+// 			&::before{
+// 				content: "";
+// 				position: absolute;
+// 				left: 0;
+// 				bottom: -7px;
+// 				height: 2px;
+// 				width: 80%;
+// 				border-radius: 10px;
+// 				background: #BF0830;
+// 				transform: scalex(0);
+// 				transition: all 0.5s ease;
+// 				transform-origin: left;
+// 			}
