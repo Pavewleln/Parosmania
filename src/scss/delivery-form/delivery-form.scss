@@ -23,7 +23,7 @@
                         align-items: center;
                         .photo-product{
                             width: 111px;
-                            height: 82px;
+                            height: auto;
                             background: #00AC4E;
                             border-radius: 5px;
                             display: flex;
@@ -62,6 +62,7 @@
                         }
                     }
                     &__pickup{
+                        color: black;
                         margin-left: 20px;
                         font-weight: 500;
                         font-size: 14.6903px;

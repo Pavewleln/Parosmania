@@ -23,14 +23,14 @@
                         align-items: center;
                         .photo-product{
                             width: 111px;
-                            height: 82px;
+                            height: auto;
                             background: #00AC4E;
                             border-radius: 5px;
                             display: flex;
                             overflow: hidden;
                             img{
-                                height: auto;
                                 width: 100%;
+                                height: auto;
                             }
                         }
                         >span{
@@ -309,7 +309,7 @@
                             align-items: center;
                             .photo-product{
                                 width: 111px;
-                                height: 82px;
+                                height:auto;
                                 background: #00AC4E;
                                 border-radius: 5px;
                                 display: flex;
@@ -1079,7 +1079,7 @@
                                 line-height: 25px;
                             }
                         }
-                        >a{
+                        .ordering{
                             font-weight: 500;
                             font-size: 16px;
                             line-height: 21px;
@@ -1087,6 +1087,9 @@
                             padding: 16px 21px;
                             background: #00AC4E;
                             border-radius: 5px;
+                            &:hover{
+                                color: white;
+                            }
                         }
         
                     }

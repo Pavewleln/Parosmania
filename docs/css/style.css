@@ -1650,6 +1650,7 @@ a:hover {
 }
 
 .page__container-banner-title .block {
+  overflow: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(#F1F1FB), to(#EBEBF5));
   background: -o-linear-gradient(top, #F1F1FB 0%, #EBEBF5 100%);
   background: linear-gradient(180deg, #F1F1FB 0%, #EBEBF5 100%);
@@ -1662,7 +1663,7 @@ a:hover {
   padding: 40px;
 }
 
-.page__container-banner-title .block > img {
+.page__container-banner-title .block .image-banner {
   position: absolute;
   top: 0;
   right: 0;
@@ -1670,19 +1671,20 @@ a:hover {
   width: auto;
 }
 
-.page__container-banner-title .block > h2 {
+.page__container-banner-title .block h2 {
   font-size: 31.6273px;
   line-height: 38px;
   margin-bottom: 15px;
+  width: 500px;
 }
 
-.page__container-banner-title .block > p {
+.page__container-banner-title .block p {
   font-size: 19.88px;
   line-height: 24px;
   color: #828282;
 }
 
-.page__container-banner-title .block > a {
+.page__container-banner-title .block a {
   display: inline-block;
   margin-top: 2.5pxrem;
   font-weight: 500;
@@ -2595,7 +2597,7 @@ a:hover {
 
 .page__container-basket-info-top .product-slider-block .photo-product {
   width: 111px;
-  height: 82px;
+  height: auto;
   background: #00AC4E;
   border-radius: 5px;
   display: -webkit-box;
@@ -2605,8 +2607,8 @@ a:hover {
 }
 
 .page__container-basket-info-top .product-slider-block .photo-product img {
-  height: auto;
   width: 100%;
+  height: auto;
 }
 
 .page__container-basket-info-top .product-slider-block > span {
@@ -2968,7 +2970,7 @@ a:hover {
 
 .page__container-delivery-info-top .product-slider-block .photo-product {
   width: 111px;
-  height: 82px;
+  height: auto;
   background: #00AC4E;
   border-radius: 5px;
   display: -webkit-box;
@@ -3015,6 +3017,7 @@ a:hover {
 }
 
 .page__container-delivery-info-bottom .tabs-info__pickup {
+  color: black;
   margin-left: 20px;
   font-weight: 500;
   font-size: 14.6903px;
@@ -3895,27 +3898,29 @@ a:hover {
 
 @media (max-width: 940px) {
   .page__container-banner-title .block {
-    height: 250px;
+    height: 240px;
   }
 
   .page__container-banner-title .block h2 {
     font-size: 26px;
     line-height: 25px;
     margin-bottom: 30px;
+    width: 400px;
   }
 
   .page__container-banner-title .block p {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 20px;
-    width: 300px;
+    width: 250px;
   }
 
   .page__container-banner-title .block a {
     padding: 7px 17px;
   }
 
-  .page__container-banner-title .block img {
+  .page__container-banner-title .block .image-banner {
+    width: 50%;
     height: 100%;
   }
 
@@ -3965,7 +3970,7 @@ a:hover {
 
   .page__container-basket-info-top .product-slider-block .photo-product {
     width: 111px;
-    height: 82px;
+    height: auto;
     background: #00AC4E;
     border-radius: 5px;
     display: -webkit-box;
@@ -4578,28 +4583,31 @@ a:hover {
 
 @media (max-width: 810px) {
   .page__container-banner-title .block {
-    height: 200px;
+    height: 160px;
+    padding: 20px;
   }
 
   .page__container-banner-title .block h2 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
   }
 
   .page__container-banner-title .block p {
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     width: 300px;
   }
 
   .page__container-banner-title .block a {
-    padding: 5px 14px;
+    padding: 5px 10px;
+    font-size: 16px;
   }
 
-  .page__container-banner-title .block img {
-    height: 100%;
+  .page__container-banner-title .block .image-banner {
+    width: 40%;
+    height: auto;
   }
 }
 
@@ -4793,17 +4801,18 @@ a:hover {
 
 @media (max-width: 662px) {
   .page__container-banner-title .block {
-    height: 160px;
+    height: 130px;
   }
 
   .page__container-banner-title .block h2 {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 18px;
     margin-bottom: 10px;
+    width: 200px;
   }
 
   .page__container-banner-title .block p {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 30px;
     margin-bottom: 7px;
     width: 300px;
@@ -4817,7 +4826,7 @@ a:hover {
     margin-top: 0px;
   }
 
-  .page__container-banner-title .block img {
+  .page__container-banner-title .block .image-banner {
     height: 100%;
   }
 }
@@ -4863,7 +4872,8 @@ a:hover {
     margin-top: 0px;
   }
 
-  .page__container-banner-title .block img {
+  .page__container-banner-title .block .image-banner {
+    width: 50%;
     height: 100%;
   }
 }
@@ -5895,7 +5905,7 @@ a:hover {
     line-height: 25px;
   }
 
-  .page .page__container-basket-sidebar-top > a {
+  .page .page__container-basket-sidebar-top .ordering {
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
@@ -5903,6 +5913,10 @@ a:hover {
     padding: 16px 21px;
     background: #00AC4E;
     border-radius: 5px;
+  }
+
+  .page .page__container-basket-sidebar-top .ordering:hover {
+    color: white;
   }
 
   .page .page__container-basket-sidebar-bottom {
