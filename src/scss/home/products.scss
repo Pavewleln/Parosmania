@@ -1,3 +1,11 @@
+.page__container-menu-slider-block>a {
+    font-size: 23.3333px;
+    line-height: 27px;
+    color: #4f4f4f;
+    &:hover{
+        color: black;
+    }
+}
 .page__container-menu{
     position: relative;
     &-slider{

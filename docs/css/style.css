@@ -1385,6 +1385,11 @@ a:hover {
   padding: 13px 25px 13px 15px;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  top: -12px;
+}
+
 .header {
   background-color: white;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
@@ -1895,6 +1900,16 @@ a:hover {
   padding: 8px 16px;
   background: #00AC4E;
   border-radius: 5px;
+}
+
+.page__container-menu-slider-block > a {
+  font-size: 23.3333px;
+  line-height: 27px;
+  color: #4f4f4f;
+}
+
+.page__container-menu-slider-block > a:hover {
+  color: black;
 }
 
 .page__container-menu {
@@ -2553,6 +2568,20 @@ a:hover {
 
 .page__container-description-bottom-sidebar .purchase-info .range-slide .range-text span b {
   font-weight: 500;
+}
+
+.page__container-basket-sidebar-top > a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  padding: 16px 21px;
+  background: #00ac4e;
+  border-radius: 5px;
+}
+
+.page__container-basket-sidebar-top > a:hover {
+  color: white;
 }
 
 .page__container-basket {

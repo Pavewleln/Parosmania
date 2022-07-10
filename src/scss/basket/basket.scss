@@ -1,3 +1,15 @@
+.page__container-basket-sidebar-top>a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+    padding: 16px 21px;
+    background: #00ac4e;
+    border-radius: 5px;
+    &:hover{
+        color: white;
+    }
+}
 .page__container{
     &-basket{
         display: flex;
