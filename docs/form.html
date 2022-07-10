@@ -6,12 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220710095815">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220710161452">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css?_v=20220710095815" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css?_v=20220710161452" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js?_v=20220710095815" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js?_v=20220710161452" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -189,8 +189,8 @@
 						</div>
 						<div class="page__container-delivery-info-bottom">
 							<div class="tabs-info">
-								<a href="" class="tabs-info__delivery active-class-checked">Доставка</a>
-								<a href="" class="tabs-info__pickup">Самовывоз (- 20%)</a>
+								<a href="" class="tabs-info__delivery tabs-form-info">Доставка</a>
+								<a href="" class="tabs-info__pickup tabs-form-info">Самовывоз (- 20%)</a>
 							</div>
 							<div class="total-info">
 								<div class="total-info-left">
@@ -220,7 +220,7 @@
 						</div>
 					</div>
 					<div class="page__container-delivery-sidebar">
-						<form class="delivery-form" action="">
+						<form class="delivery-form content-form" action="">
 							<div class="form-area">
 								<p>Район доставки</p>
 								<input type="text" placeholder="Район доставки">
@@ -256,21 +256,21 @@
 							</div>
 							<button>Оформить заказ</button>
 						</form>
-						<!-- <form action="" class="pickup-form">
-                                <div class="form-fio">
-                                    <p>ФИО</p>
-                                    <input type="text" placeholder="Введите Ваше полное имя">
-                                </div>
-                                <div class="form-phone">
-                                    <p>Телефон</p>
-                                    <input type="phone" placeholder="+380">
-                                </div>
-                                <div class="form-pickup">
-                                    <p>Когда заберете?</p>
-                                    <input type="time" placeholder="Укажите время">
-                                </div>
-                                <button>Оформить заказ</button>
-                            </form> -->
+						<form action="" class="pickup-form content-form">
+							<div class="form-fio">
+								<p>ФИО</p>
+								<input type="text" placeholder="Введите Ваше полное имя">
+							</div>
+							<div class="form-phone">
+								<p>Телефон</p>
+								<input type="phone" placeholder="+380">
+							</div>
+							<div class="form-pickup">
+								<p>Когда заберете?</p>
+								<input type="time" placeholder="Укажите время">
+							</div>
+							<button>Оформить заказ</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -333,7 +333,7 @@
 					<a href="" class="reestablish">Забыли пароль?</a>
 					<button>Войти</button>
 				</form>
-				<p>Впервые у нас? <a href="">Зарегистрироваться</a></p>
+				<p>Впервые у нас? <a href="" class="registration">Зарегистрироваться</a></p>
 			</div>
 		</div>
 	</div>
@@ -359,7 +359,7 @@
 						<input id="c_2" class="checkbox__input" type="checkbox" value="1" name="form[]">
 						<label for="c_2" class="checkbox__label"><span class="checkbox__text">Принимаю условия <a href="">Пользовательского соглашения, Политики конфиденциальности</a></span></label>
 					</div>
-					<button>Зарегистрироваться</button>
+					<button class="registration-completed">Зарегистрироваться</button>
 				</form>
 			</div>
 		</div>
@@ -484,7 +484,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220710095815"></script>
+	<script src="js/app.min.js?_v=20220710161452"></script>
 </body>
 
 </html>

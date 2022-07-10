@@ -9,18 +9,12 @@
         .pause-overlay{
             position: absolute;
             transition: all 0.5s ease;
-            opacity: 0;
-            visibility: hidden;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             cursor: pointer;
             background: rgba(0, 0, 0, 0.65) url(../img/secondary-icons/pause-video.svg) 50% 50%/ 100px 100px no-repeat;
-        }
-        &:hover .pause-overlay{
-            opacity: 1;
-            visibility: visible;
         }
     }
 }

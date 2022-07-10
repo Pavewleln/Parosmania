@@ -12,12 +12,18 @@ a{
 }
 
 .active-class-checked{
+    &:hover{
+        color: white;
+    }
     color: white;
     padding: 8px 16px;
     background: #00AC4E;
     border-radius: 5px;
     a{
         color: white;
+        &:hover{
+            color: white;
+        }
     }
 }
 .product-rating{

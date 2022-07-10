@@ -157,6 +157,7 @@
             }
             width: 35%;
             .delivery-form{
+                display: block;
                 .form-comment{
                     >textarea{
                         padding: 20px 0px 10px 30px;
@@ -167,6 +168,9 @@
                         border-radius: 7.11356px;
                     }
                 }
+            }
+            .pickup-form{
+                display: none;
             }
         }
     }  
