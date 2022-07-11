@@ -1,7 +1,7 @@
 const readImage =(selector, options = {}, block) =>{
     const input = document.getElementById(selector);
     const blockimg = document.querySelector(block);
-    input.addEventListener('change', (event) =>{
+    try{input.addEventListener('change', (event) =>{
         console.log(event.target.files);
         if(!event.target.files.length){
             return
@@ -21,10 +21,10 @@ const readImage =(selector, options = {}, block) =>{
             };
             reader.readAsDataURL(file);
         });
-    });
+    });}catch(e){}
 
-    if(options.accept && Array.isArray(options.accept)){
+    try{if(options.accept && Array.isArray(options.accept)){
         input.setAttribute('accept', options.accept.join(','));
-    }       
+    }}catch(e){}     
 };
 export default readImage;

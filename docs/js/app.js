@@ -273,24 +273,42 @@
     const readImage = (selector, options = {}, block) => {
         const input = document.getElementById(selector);
         const blockimg = document.querySelector(block);
-        input.addEventListener("change", (event => {
-            console.log(event.target.files);
-            if (!event.target.files.length) return;
-            const files = Array.from(event.target.files);
-            files.forEach((file => {
-                console.log(file);
-                if (!file.type.match("image")) return;
-                const reader = new FileReader;
-                reader.onload = ev => {
-                    console.log(ev.target.result);
-                    blockimg.insertAdjacentHTML("afterbegin", `<img src="${ev.target.result}" />`);
-                };
-                reader.readAsDataURL(file);
+        try {
+            input.addEventListener("change", (event => {
+                console.log(event.target.files);
+                if (!event.target.files.length) return;
+                const files = Array.from(event.target.files);
+                files.forEach((file => {
+                    console.log(file);
+                    if (!file.type.match("image")) return;
+                    const reader = new FileReader;
+                    reader.onload = ev => {
+                        console.log(ev.target.result);
+                        blockimg.insertAdjacentHTML("afterbegin", `<img src="${ev.target.result}" />`);
+                    };
+                    reader.readAsDataURL(file);
+                }));
             }));
-        }));
-        if (options.accept && Array.isArray(options.accept)) input.setAttribute("accept", options.accept.join(","));
+        } catch (e) {}
+        try {
+            if (options.accept && Array.isArray(options.accept)) input.setAttribute("accept", options.accept.join(","));
+        } catch (e) {}
     };
     const fileread = readImage;
+    const productsContainer = document.querySelector(".products-wrapper");
+    getProducts();
+    async function getProducts() {
+        const response = await fetch("../server/products.json");
+        const productArray = await response.json();
+        renderProducts(productArray);
+        console.log(productArray);
+    }
+    function renderProducts(productArray) {
+        productArray.forEach((item => {
+            const productHTML = `\n            <div class="product" data-id="${item.id}">\n                <div class="product-img">\n                    <img src="${item.imgSrc}" alt="">\n                </div>\n                <a href="./description.html" class="product-title">\n                    ${item.title}\n                </a>\n                <div class="product-description">\n                    ${item.description}\n                </div>\n                <div class="product-rating">\n                    <div class='rating-result'>\n                        <span class='active'></span>\t\n                        <span class='active'></span>    \n                        <span class='active'></span>  \n                        <span></span>    \n                        <span></span>\n                    </div>\n                </div>\n                <div class="product-price">\n                    <b><span>${item.price}</span>₽/кг</b> <span>За 500гр.</span>\n                </div>\n                <a href="" class="product-to-basket">В корзину</a>\n            </div>\n            `;
+            productsContainer.insertAdjacentHTML("beforeend", productHTML);
+        }));
+    }
     window["FLS"] = true;
     window.addEventListener("DOMContentLoaded", (() => {
         modules_tabs(".tabs-info-slider", ".tabs-info-block", ".info-content", "active-class-tabs-green");

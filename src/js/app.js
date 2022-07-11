@@ -7,6 +7,7 @@ import modals from './modules/modal.js';
 import Burger from './modules/menu-burger.js';
 import Form from './modules/forms.js';
 import readImage from './modules/fileread.js';
+import './modules/katalog.js';
 
 //============================================================================================================================================================================================================================================
 
@@ -19,7 +20,6 @@ window.addEventListener('DOMContentLoaded', () =>{
     new Burger().init();
     new Form('form').init();
     readImage('inputfile', {accept: ['.png', '.jpg', '.jpeg', '.gif']}, '.photo');
-
 });
 
 
