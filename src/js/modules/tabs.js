@@ -32,7 +32,6 @@ const tabs = (header, trigger, content, activeClass, display = 'block') =>{
             }); 
         }
     });} catch(e){}
-    
 };
 
 export default tabs;

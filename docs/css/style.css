@@ -377,7 +377,7 @@ body {
   margin-bottom: 10px;
 }
 
-.popup-input__content .popup__text form > button {
+.popup-input__content .popup__text form .entranced {
   font-weight: 500;
   font-size: 14.1972px;
   line-height: 18px;
@@ -1393,6 +1393,31 @@ a:hover {
   padding: 13px 25px 13px 15px;
 }
 
+.statusMessages {
+  width: 200px;
+  height: 30px;
+  background: gray;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  font-size: 12px;
+  color: white;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   position: absolute;
   top: -12px;
@@ -1674,6 +1699,7 @@ a:hover {
   overflow: hidden;
   position: relative;
   padding: 40px;
+  display: block;
 }
 
 .page__container-banner-title .block .image-banner {
@@ -3295,7 +3321,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.page__container-content-person-info form .download-file {
+.page__container-content-person-info .download .download-file {
   margin-bottom: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3305,7 +3331,7 @@ a:hover {
           align-items: center;
 }
 
-.page__container-content-person-info form .download-file .photo {
+.page__container-content-person-info .download .download-file .photo {
   background: #00AC4E;
   border-radius: 12px;
   width: 75px;
@@ -3313,16 +3339,16 @@ a:hover {
   margin-right: 40px;
 }
 
-.page__container-content-person-info form .download-file .photo img {
+.page__container-content-person-info .download .download-file .photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-.page__container-content-person-info form .download-file input {
+.page__container-content-person-info .download .download-file input {
   display: none;
 }
 
-.page__container-content-person-info form .download-file label {
+.page__container-content-person-info .download .download-file label {
   color: #00AC4E;
   cursor: pointer;
   font-weight: 500;
@@ -3330,11 +3356,11 @@ a:hover {
   line-height: 32px;
 }
 
-.page__container-content-person-info form .download-file label:hover {
+.page__container-content-person-info .download .download-file label:hover {
   text-decoration: underline;
 }
 
-.page__container-content-person-info form .fio {
+.page__container-content-person-info .download .fio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3346,15 +3372,15 @@ a:hover {
           align-items: center;
 }
 
-.page__container-content-person-info form .fio .name {
+.page__container-content-person-info .download .fio .name {
   margin-right: 5px;
 }
 
-.page__container-content-person-info form .email p {
+.page__container-content-person-info .download .email p {
   margin-top: 20px;
 }
 
-.page__container-content-person-info form .email input {
+.page__container-content-person-info .download .email input {
   width: 100%;
 }
 
@@ -3545,7 +3571,7 @@ a:hover {
     margin-bottom: 30px;
   }
 
-  .page__container-content-person-info form .fio {
+  .page__container-content-person-info .download .fio {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -3768,6 +3794,11 @@ a:hover {
 
   header nav.navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item > svg path {
     fill: #fff;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: relative;
+    top: -50px;
   }
 }
 
@@ -5378,18 +5409,18 @@ a:hover {
 }
 
 @media (max-width: 510px) {
-  .page__container-content-person-info form .fio {
+  .page__container-content-person-info .download .fio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 
-  .page__container-content-person-info form .fio .name {
+  .page__container-content-person-info .download .fio .name {
     width: 100%;
   }
 
-  .page__container-content-person-info form .fio .second-name {
+  .page__container-content-person-info .download .fio .second-name {
     width: 100%;
   }
 
