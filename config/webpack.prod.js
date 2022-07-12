@@ -128,6 +128,7 @@ const config = {
 	],
 	resolve: {
 		alias: {
+			"@assets":`${paths.src}/assets`,
 			"@scss": `${paths.src}/scss`,
 			"@js": `${paths.src}/js`,
 			"@img": `${paths.src}/img`

@@ -1,0 +1,108 @@
+[
+    {
+    "id": 1,
+    "imgSrc": "../src/img/katalog/barbecue/barbecue-baranina.jpg",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 2,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 3,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 4,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 5,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 6,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 7,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 8,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 9,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 10,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 11,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 12,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 13,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 14,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    },
+    {
+    "id": 15,
+    "imgSrc": "../src/img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
+    "title": "Шашлык из баранины",
+    "description": "Аппетитный шашлык из баранины",
+    "price": 120
+    }
+
+]

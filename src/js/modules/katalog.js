@@ -3,7 +3,7 @@
     getProducts();
 
     async function getProducts(){
-        const response = await fetch('../server/products.json');
+        const response = await fetch('./products.json');
 
         const productArray = await response.json(); 
         renderProducts(productArray);
