@@ -145,6 +145,68 @@
     "title": "Чесночный соус",
     "description": "Острый чесночный соус",
     "price": 40
+    },
+    {
+    "id": 22,
+    "imgSrc": "./img/katalog/garnier/adzhapsandali.webp",
+    "title": "Аджапсандали",
+    "description": "Знаменитые грузинские аджапсандали",
+    "price": 90
+    },
+    {
+    "id": 23,
+    "imgSrc": "./img/katalog/garnier/lobio.webp",
+    "title": "Лобио",
+    "description": "То самое лобио!",
+    "price": 120
+    },
+    {
+    "id": 24,
+    "imgSrc": "./img/katalog/hot_snaks/chashushuli.jpg",
+    "title": "Сашишули",
+    "description": "Аппетитные сашишули",
+    "price": 120
+    },
+    {
+    "id": 25,
+    "imgSrc": "./img/katalog/hot_snaks/kuchmachi.jpg",
+    "title": "Кучмачи",
+    "description": "Традиционные грузинские кучмачи",
+    "price": 170
+    },
+    {
+    "id": 26,
+    "imgSrc": "./img/katalog/khachapuri/Adzharskie-khachapuri.jpg",
+    "title": "Аджарские хачапури",
+    "description": "Вкуснейшие хачапури с разбитым яйцом",
+    "price": 200
+    },
+    {
+    "id": 27,
+    "imgSrc": "./img/katalog/khachapuri/imeritenskie-khachapuri.jpg",
+    "title": "Имеритенские хачапури",
+    "description": "Знаметые имеритенские хачапури",
+    "price": 190
+    },
+    {
+    "id": 28,
+    "imgSrc": "./img/katalog/khinkali/khinkali-s-govadinoy.jpg",
+    "title": "Хинкали с говядиной",
+    "description": "Сытные хинкали с говядиной",
+    "price": 140
+    },
+    {
+    "id": 29,
+    "imgSrc": "./img/katalog/khinkali/khinkali-so-svininoy.jpg",
+    "title": "Хинкали со свининой",
+    "description": "Сытные хинкали со свининой",
+    "price": 150
+    },
+    {
+    "id": 30,
+    "imgSrc": "./img/katalog/soup/borsh.jpg",
+    "title": "Борщ",
+    "description": "Ничего не обычного! Обычный русский борщ в грузинской кухне!",
+    "price": 100
     }
-
 ]

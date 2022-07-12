@@ -128,4 +128,7 @@ a{
     align-items: center;
     transform: translateX(-50%);
     text-align: center;
+    @media(max-width:560px){
+        font-size: 8px;
+    }
 }

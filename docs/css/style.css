@@ -5000,6 +5000,12 @@ a:hover {
   }
 }
 
+@media (max-width: 560px) {
+  .statusMessages {
+    font-size: 8px;
+  }
+}
+
 @media (max-width: 550px) {
   .page__container-description-bottom-info-content .tabs-info-slider {
     margin-bottom: 20px;
