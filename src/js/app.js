@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     tabs('.tabs-info-slider', '.tabs-info-block', '.info-content', 'active-class-tabs-green' );
     tabs('.tabs-info', '.tabs-form-info', '.content-form', 'active-class-checked');
     tabs('.page__container-tabs-content', '.tabs-info', '.content-profile', 'active-class-tab-profile', 'flex');
-    tabs('.title-sliders', '.title-slides', '.block', 'active-title-slide');
+    tabs('.title-sliders', '.title-slides', '.block-slide', 'active-title-slide');
     modals();
     new Burger().init();
     new Form('form').init();
