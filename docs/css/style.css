@@ -348,15 +348,15 @@ body {
 }
 
 .popup-input__content .popup__text form input.phone {
-  background-image: url(../../img/popups/input-call.svg);
+  background-image: url(../img/popups/input-call.svg);
 }
 
 .popup-input__content .popup__text form input.password {
-  background-image: url(../../img/popups/input-key.svg);
+  background-image: url(../img/popups/input-key.svg);
 }
 
 .popup-input__content .popup__text form input.email {
-  background-image: url(../../img/popups/input-email.svg);
+  background-image: url(../img/popups/input-email.svg);
 }
 
 .popup-input__content .popup__text form .login-fail {
@@ -476,11 +476,11 @@ body {
 }
 
 .popup-registration__content .popup__text form input.phone {
-  background-image: url(../../img/popups/input-call.svg);
+  background-image: url(../img/popups/input-call.svg);
 }
 
 .popup-registration__content .popup__text form input.password {
-  background-image: url(../../img/popups/input-key.svg);
+  background-image: url(../img/popups/input-key.svg);
 }
 
 .popup-registration__content .popup__text form .login-fail {
@@ -575,7 +575,7 @@ body {
 }
 
 .popup-subscription__content .popup__text form input.email {
-  background-image: url(../../img/popups/input-email.svg);
+  background-image: url(../img/popups/input-email.svg);
 }
 
 .popup-subscription__content .popup__text form > button {
@@ -809,15 +809,15 @@ body {
 }
 
 .popup-recovery__content .popup__text form input.phone {
-  background-image: url(../../img/popups/input-call.svg);
+  background-image: url(../img/popups/input-call.svg);
 }
 
 .popup-recovery__content .popup__text form input.password {
-  background-image: url(../../img/popups/input-key.svg);
+  background-image: url(../img/popups/input-key.svg);
 }
 
 .popup-recovery__content .popup__text form input.email {
-  background-image: url(../../img/popups/input-email.svg);
+  background-image: url(../img/popups/input-email.svg);
 }
 
 .popup-recovery__content .popup__text form .reestablish {
