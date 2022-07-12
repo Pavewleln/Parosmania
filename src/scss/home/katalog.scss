@@ -19,12 +19,16 @@
             flex-wrap: wrap;
             .product{
                 width: 205px;
+                height: 340px;
                 margin: 5px;
                 margin-bottom: 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 .product-rating{
                     .rating-result {
                         width: 265px;
-                        margin-bottom: 6px;
+                        // margin-bottom: 6px;
                     }
                     .rating-result span {
                         padding: 0;
@@ -55,7 +59,7 @@
                 }
                 &-title{
                     display: block;
-                    margin: 9px 0 5px 0;
+                    // margin: 9px 0 5px 0;
                     font-weight: 500;
                     font-size: 14.4845px;
                     line-height: 22px;
@@ -69,11 +73,11 @@
                     line-height: 19px;
                     color: #000000;
                     display: block;
-                    margin-bottom: 5px;
+                    // margin-bottom: 5px;
                 }
                 &-price{
                     display: block;
-                    margin-bottom: 12px;
+                    // margin-bottom: 12px;
                     padding-bottom: 10px;
                     >b{
                         font-weight: 500;
@@ -96,6 +100,7 @@
                     padding: 9px 25px;
                     background: #00AC4E;
                     border-radius: 4.52641px;
+                    width: 150px;
                 }
             }
         }

@@ -336,7 +336,7 @@ body {
 .popup-input__content .popup__text form input {
   padding: 15px 15px 15px 50px;
   background-color: #FCFCFC;
-  width: 130%;
+  width: 110%;
   border: 0.873181px solid #EBEBEB;
   border-radius: 5.91549px;
   font-weight: 400;
@@ -563,7 +563,7 @@ body {
 .popup-subscription__content .popup__text form input {
   padding: 15px 0 15px 50px;
   background-color: #FCFCFC;
-  width: 140%;
+  width: 110%;
   border: 0.873181px solid #EBEBEB;
   border-radius: 5.91549px;
   font-weight: 400;
@@ -797,7 +797,7 @@ body {
 .popup-recovery__content .popup__text form input {
   padding: 15px 0 15px 50px;
   background-color: #FCFCFC;
-  width: 130%;
+  width: 110%;
   border: 0.873181px solid #EBEBEB;
   border-radius: 5.91549px;
   font-weight: 400;
@@ -1801,13 +1801,23 @@ a:hover {
 
 .page__container-katalog .row .products-wrapper .product {
   width: 205px;
+  height: 340px;
   margin: 5px;
   margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page__container-katalog .row .products-wrapper .product .product-rating .rating-result {
   width: 265px;
-  margin-bottom: 6px;
 }
 
 .page__container-katalog .row .products-wrapper .product .product-rating .rating-result span {
@@ -1845,7 +1855,6 @@ a:hover {
 
 .page__container-katalog .row .products-wrapper .product-title {
   display: block;
-  margin: 9px 0 5px 0;
   font-weight: 500;
   font-size: 14.4845px;
   line-height: 22px;
@@ -1861,12 +1870,10 @@ a:hover {
   line-height: 19px;
   color: #000000;
   display: block;
-  margin-bottom: 5px;
 }
 
 .page__container-katalog .row .products-wrapper .product-price {
   display: block;
-  margin-bottom: 12px;
   padding-bottom: 10px;
 }
 
@@ -1892,6 +1899,7 @@ a:hover {
   padding: 9px 25px;
   background: #00AC4E;
   border-radius: 4.52641px;
+  width: 150px;
 }
 
 .page__container-katalog .pagination-block {
