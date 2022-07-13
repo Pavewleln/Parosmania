@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () =>{
         container: '.page__container-menu-slider',
         prev: '.page__container-menu .prev__arrow',
         next: '.page__container-menu .next__arrow',
-        autoplay: true
+        autoplay: false
     });
     menuSlider.init();
     menuProducts();
