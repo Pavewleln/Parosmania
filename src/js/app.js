@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     new Burger().init();
     new Form('form').init();
     readImage('inputfile', {accept: ['.png', '.jpg', '.jpeg', '.gif']}, '.photo');
-    // katalog('.products-wrapper');
+    katalog('.products-wrapper');
     const menuSlider = new MiniSlider({
         container: '.page__container-menu-slider',
         prev: '.page__container-menu .prev__arrow',
@@ -30,12 +30,5 @@ window.addEventListener('DOMContentLoaded', () =>{
         autoplay: true
     });
     menuSlider.init();
-    // const bannerSlider = new MiniSlider({
-    //     container: '.page__container-banner-title',
-    //     prev: '.page__container-banner .next-slide-banner',
-    //     next: '.page__container-banner .prev-slide-banner',
-    //     autoplay: false
-    // });
-    // bannerSlider.init();
     menuProducts();
 });
