@@ -297,6 +297,8 @@
     const fileread = readImage;
     const katalog = container => {
         const productsContainer = document.querySelector(container);
+        let items = document.querySelectorAll(".pagination li");
+        let notesOnPage = 8;
         getProducts();
         async function getProducts() {
             const response = await fetch("./products.json");
@@ -305,9 +307,18 @@
             console.log(productArray);
         }
         function renderProducts(productArray) {
-            productArray.forEach((item => {
-                const productHTML = `\n            <div class="product" data-id="${item.id}">\n                <div class="product-img">\n                    <img src="${item.imgSrc}" alt="">\n                </div>\n                <a href="./description.html" class="product-title">\n                    ${item.title}\n                </a>\n                <div class="product-description">\n                    ${item.description}\n                </div>\n                <div class="product-rating">\n                    ${item.rating}\n                </div>\n                <div class="product-price">\n                    <b><span>${item.price}</span>₽/кг</b> <span>За 500гр.</span>\n                </div>\n                <a href="" class="product-to-basket">В корзину</a>\n            </div>\n            `;
-                productsContainer.insertAdjacentHTML("beforeend", productHTML);
+            productsContainer.innerHTML = "";
+            for (let item of items) item.addEventListener("click", (function(e) {
+                e.preventDefault();
+                let pageNum = +this.innerHTML;
+                let start = (pageNum - 1) * notesOnPage;
+                let end = start + notesOnPage;
+                let notes = productArray.slice(start, end);
+                console.log(notes);
+                productArray.forEach((item => {
+                    const productHTML = `\n                    <div class="product" data-id="${item.id}">\n                        <div class="product-img">\n                            <img src="${item.imgSrc}" alt="">\n                        </div>\n                        <a href="./description.html" class="product-title">\n                            ${item.title}\n                        </a>\n                        <div class="product-description">\n                            ${item.description}\n                        </div>\n                        <div class="product-rating">\n                            ${item.rating}\n                        </div>\n                        <div class="product-price">\n                            <b><span>${item.price}</span>₽/кг</b> <span>За 500гр.</span>\n                        </div>\n                        <a href="" class="product-to-basket">В корзину</a>\n                    </div>\n                    `;
+                    productsContainer.insertAdjacentHTML("beforeend", productHTML);
+                }));
             }));
         }
     };
@@ -384,7 +395,7 @@
             container: ".page__container-menu-slider",
             prev: ".page__container-menu .prev__arrow",
             next: ".page__container-menu .next__arrow",
-            autoplay: true
+            autoplay: false
         });
         menuSlider.init();
         modules_menuProducts();
