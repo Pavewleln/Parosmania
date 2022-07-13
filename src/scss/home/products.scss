@@ -14,17 +14,17 @@
         justify-content: space-between;
         overflow-y: auto;
         width: 95%;
+        margin: 0 auto;
         &::-webkit-scrollbar {
             display: none;
         }
         &-block{
-            
             margin-right: 95px;
             padding: 2px 0;
             >a{
-                font-size: 23.3333px;
+                font-size: 22px;
                 line-height: 27px;
-                color: #4F4F4F;
+                display: flex;
             }
             
         }
@@ -36,12 +36,21 @@
         }
         
     }
-    >img{
+    .next__arrow{
         position: absolute;
         right: 5px;
-        top: 30%;
+        top: 50%;
+        transform: translateY(-50%);
         cursor: pointer;
     }
+    .prev__arrow{
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        cursor: pointer;
+    }
+
 }
 @media(max-width:767px){
     .page__container-menu{

@@ -1,4 +1,5 @@
-    const productsContainer = document.querySelector('.products-wrapper');
+const katalog = (container) =>{
+    const productsContainer = document.querySelector(container);
 
     getProducts();
 
@@ -24,13 +25,7 @@
                     ${item.description}
                 </div>
                 <div class="product-rating">
-                    <div class='rating-result'>
-                        <span class='active'></span>	
-                        <span class='active'></span>    
-                        <span class='active'></span>  
-                        <span></span>    
-                        <span></span>
-                    </div>
+                    ${item.rating}
                 </div>
                 <div class="product-price">
                     <b><span>${item.price}</span>₽/кг</b> <span>За 500гр.</span>
@@ -41,3 +36,6 @@
             productsContainer.insertAdjacentHTML('beforeend', productHTML);
         });
     }
+};
+   
+export default katalog;

@@ -7,7 +7,9 @@ import modals from './modules/modal.js';
 import Burger from './modules/menu-burger.js';
 import Form from './modules/forms.js';
 import readImage from './modules/fileread.js';
-import './modules/katalog.js';
+import katalog from './modules/katalog.js';
+import MiniSlider from './modules/sliderMenu.js';
+import menuProducts from './modules/menuProducts.js';
 
 //============================================================================================================================================================================================================================================
 
@@ -20,106 +22,20 @@ window.addEventListener('DOMContentLoaded', () =>{
     new Burger().init();
     new Form('form').init();
     readImage('inputfile', {accept: ['.png', '.jpg', '.jpeg', '.gif']}, '.photo');
+    // katalog('.products-wrapper');
+    const menuSlider = new MiniSlider({
+        container: '.page__container-menu-slider',
+        prev: '.page__container-menu .prev__arrow',
+        next: '.page__container-menu .next__arrow',
+        autoplay: true
+    });
+    menuSlider.init();
+    // const bannerSlider = new MiniSlider({
+    //     container: '.page__container-banner-title',
+    //     prev: '.page__container-banner .next-slide-banner',
+    //     next: '.page__container-banner .prev-slide-banner',
+    //     autoplay: false
+    // });
+    // bannerSlider.init();
+    menuProducts();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

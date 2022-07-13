@@ -4,6 +4,7 @@
     "imgSrc": "./img/katalog/barbecue/barbecue-baranina.jpg",
     "title": "Шашлык из баранины",
     "description": "Аппетитный шашлык из баранины",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span></div>",
     "price": 150
     },
     {
@@ -11,6 +12,7 @@
     "imgSrc": "./img/katalog/coup/grecheskiy-coup.jpg",
     "title": "Греческий суп",
     "description": "Аппетитный греческий суп",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 90
     },
     {
@@ -18,6 +20,7 @@
     "imgSrc": "./img/katalog/cold_snaks/baklazhany-po-gruzinski.webp",
     "title": "Баклажаны по-грузински",
     "description": "Вкусные баклажаны по-грузински",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 80
     },
     {
@@ -25,6 +28,7 @@
     "imgSrc": "./img/katalog/cold_snaks/phali-iz-svekly.jpg",
     "title": "Пхали из свеклы",
     "description": "Аппетитные пхали из свеклы",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span></span><span></span><span></span></div>",
     "price": 70
     },
     {
@@ -32,6 +36,7 @@
     "imgSrc": "./img/katalog/desert/blinchiki-s-clubnikoy.jpg",
     "title": "Блинчики с клубникой",
     "description": "Вкуснейшие блинчики со свежей клубникой",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active></span><span class='active'></span></div>",
     "price": 100
     },
     {
@@ -39,6 +44,7 @@
     "imgSrc": "./img/katalog/desert/chizkaike.webp",
     "title": "Чизкейк",
     "description": "Свежий и сочный творожный чизкейк с сиропом и ягодами",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span class='active><span></span><span class='active'></span></div>",
     "price": 150
     },
     {
@@ -46,6 +52,7 @@
     "imgSrc": "./img/katalog/drinks/apelsinovuy-sok.jpg",
     "title": "Апельсиновый сок",
     "description": "Свежевыжатый апельсиновый сок",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 80
     },
     {
@@ -53,6 +60,7 @@
     "imgSrc": "./img/katalog/drinks/vishnevuy-sok.webp",
     "title": "Вишневый сок",
     "description": "Свежевыжатый вишневый сок",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 80
     },
     {
@@ -60,6 +68,7 @@
     "imgSrc": "./img/katalog/garnier/adzhapsandali.webp",
     "title": "Аджапсандали",
     "description": "Знаменитые грузинские аджапсандали",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 90
     },
     {
@@ -67,6 +76,7 @@
     "imgSrc": "./img/katalog/garnier/lobio.webp",
     "title": "Лобио",
     "description": "То самое лобио!",
+    "rating":"<div class='rating-result'><span class='active'></span><span></span><span></span><span></span><span></span></div>",
     "price": 120
     },
     {
@@ -74,6 +84,7 @@
     "imgSrc": "./img/katalog/hot_snaks/chashushuli.jpg",
     "title": "Сашишули",
     "description": "Аппетитные сашишули",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span></span><span></span><span></span></div>",
     "price": 120
     },
     {
@@ -81,6 +92,7 @@
     "imgSrc": "./img/katalog/hot_snaks/kuchmachi.jpg",
     "title": "Кучмачи",
     "description": "Традиционные грузинские кучмачи",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span></span><span></span><span></span></div>",
     "price": 170
     },
     {
@@ -88,6 +100,7 @@
     "imgSrc": "./img/katalog/khachapuri/Adzharskie-khachapuri.jpg",
     "title": "Аджарские хачапури",
     "description": "Вкуснейшие хачапури с разбитым яйцом",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 200
     },
     {
@@ -95,6 +108,7 @@
     "imgSrc": "./img/katalog/khachapuri/imeritenskie-khachapuri.jpg",
     "title": "Имеритенские хачапури",
     "description": "Знаметые имеритенские хачапури",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 190
     },
     {
@@ -102,6 +116,7 @@
     "imgSrc": "./img/katalog/khinkali/khinkali-s-govadinoy.jpg",
     "title": "Хинкали с говядиной",
     "description": "Сытные хинкали с говядиной",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span></span><span></span><span></span></div>",
     "price": 140
     },
     {
@@ -109,6 +124,7 @@
     "imgSrc": "./img/katalog/khinkali/khinkali-so-svininoy.jpg",
     "title": "Хинкали со свининой",
     "description": "Сытные хинкали со свининой",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 150
     },
     {
@@ -116,6 +132,7 @@
     "imgSrc": "./img/katalog/soup/borsh.jpg",
     "title": "Борщ",
     "description": "Ничего не обычного! Обычный русский борщ в грузинской кухне!",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span></span><span></span></div>",
     "price": 100
     },
     {
@@ -123,6 +140,7 @@
     "imgSrc": "./img/katalog/soup/shi.webp",
     "title": "Щи",
     "description": "Щи да Аджарские хачапури - еда наша!",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span></span><span></span><span></span></div>",
     "price": 110
     },
     {
@@ -130,6 +148,7 @@
     "imgSrc": "./img/katalog/soup/uha.webp",
     "title": "Уха",
     "description": "Наваристая уха из сома",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span></div>",
     "price": 110
     },
     {
@@ -137,6 +156,7 @@
     "imgSrc": "./img/katalog/souse/adzhika.jpg",
     "title": "Аджика",
     "description": "Острейшая и одновременно вкуснейшая аджика",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span></div>",
     "price":40
     },
     {
@@ -144,69 +164,7 @@
     "imgSrc": "./img/katalog/souse/chesnochnuy-souse.jpg",
     "title": "Чесночный соус",
     "description": "Острый чесночный соус",
+    "rating":"<div class='rating-result'><span class='active'></span><span class='active'></span><span class='active'></span><span class='active'></span><span></span></div>",
     "price": 40
-    },
-    {
-    "id": 22,
-    "imgSrc": "./img/katalog/garnier/adzhapsandali.webp",
-    "title": "Аджапсандали",
-    "description": "Знаменитые грузинские аджапсандали",
-    "price": 90
-    },
-    {
-    "id": 23,
-    "imgSrc": "./img/katalog/garnier/lobio.webp",
-    "title": "Лобио",
-    "description": "То самое лобио!",
-    "price": 120
-    },
-    {
-    "id": 24,
-    "imgSrc": "./img/katalog/hot_snaks/chashushuli.jpg",
-    "title": "Сашишули",
-    "description": "Аппетитные сашишули",
-    "price": 120
-    },
-    {
-    "id": 25,
-    "imgSrc": "./img/katalog/hot_snaks/kuchmachi.jpg",
-    "title": "Кучмачи",
-    "description": "Традиционные грузинские кучмачи",
-    "price": 170
-    },
-    {
-    "id": 26,
-    "imgSrc": "./img/katalog/khachapuri/Adzharskie-khachapuri.jpg",
-    "title": "Аджарские хачапури",
-    "description": "Вкуснейшие хачапури с разбитым яйцом",
-    "price": 200
-    },
-    {
-    "id": 27,
-    "imgSrc": "./img/katalog/khachapuri/imeritenskie-khachapuri.jpg",
-    "title": "Имеритенские хачапури",
-    "description": "Знаметые имеритенские хачапури",
-    "price": 190
-    },
-    {
-    "id": 28,
-    "imgSrc": "./img/katalog/khinkali/khinkali-s-govadinoy.jpg",
-    "title": "Хинкали с говядиной",
-    "description": "Сытные хинкали с говядиной",
-    "price": 140
-    },
-    {
-    "id": 29,
-    "imgSrc": "./img/katalog/khinkali/khinkali-so-svininoy.jpg",
-    "title": "Хинкали со свининой",
-    "description": "Сытные хинкали со свининой",
-    "price": 150
-    },
-    {
-    "id": 30,
-    "imgSrc": "./img/katalog/soup/borsh.jpg",
-    "title": "Борщ",
-    "description": "Ничего не обычного! Обычный русский борщ в грузинской кухне!",
-    "price": 100
     }
 ]
