@@ -10,6 +10,9 @@ import readImage from './modules/fileread.js';
 import katalog from './modules/katalog.js';
 import MiniSlider from './modules/sliderMenu.js';
 import menuProducts from './modules/menuProducts.js';
+import VideoPlayer from './modules/video.js';
+import './modules/counter.js';
+import './modules/cart.js';
 
 //============================================================================================================================================================================================================================================
 
@@ -17,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     tabs('.tabs-info-slider', '.tabs-info-block', '.info-content', 'active-class-tabs-green' );
     tabs('.tabs-info', '.tabs-form-info', '.content-form', 'active-class-checked');
     tabs('.page__container-tabs-content', '.tabs-info', '.content-profile', 'active-class-tab-profile', 'flex');
+    tabs('.pagination', '.pagin-link', '.products-wrapper', 'active-class-checked', 'flex');
     tabs('.title-sliders', '.title-slides', '.block-slide', 'active-title-slide');
     modals();
     new Burger().init();
@@ -31,5 +35,5 @@ window.addEventListener('DOMContentLoaded', () =>{
     });
     menuSlider.init();
     menuProducts();
-
+    // new VideoPlayer('.pause-overlay', '.overlay').init();
 });

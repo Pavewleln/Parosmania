@@ -297,8 +297,8 @@
     const fileread = readImage;
     const katalog = container => {
         const productsContainer = document.querySelector(container);
-        let items = document.querySelectorAll(".pagination li");
-        let notesOnPage = 8;
+        document.querySelectorAll(".pagination li");
+        let productHTML;
         getProducts();
         async function getProducts() {
             const response = await fetch("./products.json");
@@ -307,18 +307,9 @@
             console.log(productArray);
         }
         function renderProducts(productArray) {
-            productsContainer.innerHTML = "";
-            for (let item of items) item.addEventListener("click", (function(e) {
-                e.preventDefault();
-                let pageNum = +this.innerHTML;
-                let start = (pageNum - 1) * notesOnPage;
-                let end = start + notesOnPage;
-                let notes = productArray.slice(start, end);
-                console.log(notes);
-                productArray.forEach((item => {
-                    const productHTML = `\n                    <div class="product" data-id="${item.id}">\n                        <div class="product-img">\n                            <img src="${item.imgSrc}" alt="">\n                        </div>\n                        <a href="./description.html" class="product-title">\n                            ${item.title}\n                        </a>\n                        <div class="product-description">\n                            ${item.description}\n                        </div>\n                        <div class="product-rating">\n                            ${item.rating}\n                        </div>\n                        <div class="product-price">\n                            <b><span>${item.price}</span>₽/кг</b> <span>За 500гр.</span>\n                        </div>\n                        <a href="" class="product-to-basket">В корзину</a>\n                    </div>\n                    `;
-                    productsContainer.insertAdjacentHTML("beforeend", productHTML);
-                }));
+            productArray.forEach((item => {
+                productHTML = `\n                    <div class="product" data-id="${item.id}">\n                        <div class="product-img">\n                            <img product-image src="${item.imgSrc}" alt="">\n                        </div>\n                        <a href="./description.html" class="product-title">\n                            ${item.title}\n                        </a>\n                        <div class="product-description">\n                            ${item.description}\n                        </div>\n                        <div class="product-rating">\n                            ${item.rating}\n                        </div>\n                        <div class="price-kol">\n                            <div class="price-kol__prev btn-kol" data-action="minus">\n                            -\n                            </div>\n                            <span data-counter>1</span>\n                            <div class="price-kol__next btn-kol" data-action="plus">\n                                +\n                            </div>\n                        </div>\n                        <div class="product-price">\n                            <b><span class="price-products">${item.price}</span>₽/кг</b> <span>За 500гр.</span>\n                        </div>\n                        <a href="" class="product-to-basket" data-cart>В корзину</a>\n                    </div>\n                    `;
+                productsContainer.insertAdjacentHTML("beforeend", productHTML);
             }));
         }
     };
@@ -378,11 +369,46 @@
         }));
     };
     const modules_menuProducts = menuProducts;
+    window.addEventListener("click", (function(event) {
+        let counter;
+        if ("plus" === event.target.dataset.action || "minus" === event.target.dataset.action) {
+            const counterWrapper = event.target.closest(".price-kol");
+            counter = counterWrapper.querySelector("[data-counter]");
+        }
+        if ("plus" === event.target.dataset.action) counter.innerText = ++counter.innerText;
+        if ("minus" === event.target.dataset.action) if (parseInt(counter.innerText) > 1) counter.innerText = --counter.innerText; else if (event.target.closest(".product-slider") && 1 === parseInt(counter.innerText)) {
+            console.log("IN CART!!!!");
+            event.target.closest(".product-slider-block").remove();
+            toggleCartStatus();
+            calcCartPriceAndDelivery();
+        }
+        if (event.target.hasAttribute("data-action") && event.target.closest(".product-slider")) calcCartPriceAndDelivery();
+    }));
+    window.addEventListener("click", (function(event) {
+        const cartWrapper = document.querySelector(".product-slider");
+        if (event.target.hasAttribute("data-cart")) {
+            event.preventDefault();
+            const card = event.target.closest(".product");
+            const productInfo = {
+                id: card.dataset.id,
+                imgSrc: card.querySelector("[product-image]").getAttribute("src"),
+                title: card.querySelector(".product-title").innerText,
+                price: card.querySelector(".price-products").innerText,
+                counter: card.querySelector("[data-counter]").innerText
+            };
+            const cartItemHTML = `\n            <div class="product-slider-block" data-id="${productInfo.id}">\n                <a href=""><img src="img/secondary-icons/cross-close.svg" alt=""></a>\n                <div class="photo-product">\n                    <img src="${productInfo.imgSrc}" alt="">\n                </div>\n                <span class="name-product">${productInfo.title}</span>\n                <div class="price-kol">\n                    <div class="price-kol__prev btn-kol" data-action="minus">\n                        -\n                    </div>\n                    <span data-counter>${productInfo.counter}</span>\n                    <div class="price-kol__next btn-kol" data-action="plus">\n                        +\n                    </div>\n                </div>\n                <div class="price">\n                    <span>${productInfo.price}</span>\n                </div>\n            </div>`;
+            try {
+                cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
+            } catch (e) {}
+            card.querySelector("[data-counter]").innerText = "1";
+        }
+    }));
     window["FLS"] = true;
     window.addEventListener("DOMContentLoaded", (() => {
         modules_tabs(".tabs-info-slider", ".tabs-info-block", ".info-content", "active-class-tabs-green");
         modules_tabs(".tabs-info", ".tabs-form-info", ".content-form", "active-class-checked");
         modules_tabs(".page__container-tabs-content", ".tabs-info", ".content-profile", "active-class-tab-profile", "flex");
+        modules_tabs(".pagination", ".pagin-link", ".products-wrapper", "active-class-checked", "flex");
         modules_tabs(".title-sliders", ".title-slides", ".block-slide", "active-title-slide");
         modal();
         (new Burger).init();

@@ -1351,6 +1351,10 @@ a:hover {
 }
 
 .price-kol {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1756,8 +1760,8 @@ a:hover {
       -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
           transform: matrix(-1, 0, 0, 1, 0, 0);
   border-radius: 50%;
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   margin: 0 6px;
   cursor: pointer;
 }
@@ -1801,7 +1805,7 @@ a:hover {
 
 .page__container-katalog .row .products-wrapper .product {
   width: 205px;
-  height: 300px;
+  height: 350px;
   margin: 5px;
   margin-bottom: 60px;
   display: -webkit-box;
@@ -1892,6 +1896,7 @@ a:hover {
 }
 
 .page__container-katalog .row .products-wrapper .product-to-basket {
+  margin-top: 5px;
   font-weight: 500;
   font-size: 18.1056px;
   line-height: 14px;
@@ -1942,6 +1947,10 @@ a:hover {
   padding: 8px 16px;
   background: #00AC4E;
   border-radius: 5px;
+}
+
+.page__container-katalog .pagination-block nav > ul > li .active-class-checked a {
+  color: white;
 }
 
 .page__container-menu-slider-block > a {
@@ -5741,8 +5750,8 @@ a:hover {
   }
 
   .page__container-banner-slides > ul .title-slides {
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
   }
 
   .page__container-banner-slides > ul .active-title-slide {
